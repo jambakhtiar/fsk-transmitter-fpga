@@ -1,0 +1,61 @@
+Loading design for application iotiming from file FSK_Transmitter_impl1.ncd.
+Design name: system_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO640C
+Package:     TQFP100
+Performance: 4
+Package Status:                     Final          Version 1.17.
+Performance Hardware Data Status: Version 1.124.
+Loading design for application iotiming from file FSK_Transmitter_impl1.ncd.
+Design name: system_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO640C
+Package:     TQFP100
+Performance: 5
+Package Status:                     Final          Version 1.17.
+Performance Hardware Data Status: Version 1.124.
+Loading design for application iotiming from file FSK_Transmitter_impl1.ncd.
+Design name: system_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO640C
+Package:     TQFP100
+Performance: M
+Package Status:                     Final          Version 1.17.
+Performance Hardware Data Status: Version 1.124.
+// Design: system_top
+// Package: TQFP100
+// ncd File: FSK_Transmitter_impl1.ncd
+// Version: Diamond (64-bit) 3.13.0.56.2
+// Written on Mon Aug 19 10:36:16 2024
+// M: Minimum Performance Grade
+// iotiming FSK_Transmitter_impl1.ncd FSK_Transmitter_impl1.prf -gui -msgset /home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 5, 4, 3):
+
+// Input Setup and Hold Times
+
+Port        Clock        Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+i_Done_Trig i_fpga_clock R     5.908      3      -0.249     M
+i_SPI_MISO  i_fpga_clock R     2.778      3       0.341     3
+o_SPI_CS_n  i_fpga_clock R     6.442      3       0.307     3
+
+
+// Clock to Output Delay
+
+Port          Clock        Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+F1Q1          i_fpga_clock R     5.777         3        1.152          M
+F1Q4          i_fpga_clock R     8.022         3        1.603          M
+F2Q2          i_fpga_clock R     6.944         3        1.371          M
+F2Q3          i_fpga_clock R     8.465         3        1.710          M
+o_Master_Trig i_fpga_clock R     5.777         3        1.152          M
+o_SPI_CS_n    i_fpga_clock R     8.140         3        1.144          M
+o_SPI_Clk     i_fpga_clock R     8.499         3        1.604          M
+o_SPI_MOSI    i_fpga_clock R     9.406         3        1.380          M
+WARNING: you must also run trce with hold speed: 3

@@ -1,0 +1,1435 @@
+
+Loading design for application trce from file FSK_Transmitter_impl1.ncd.
+Design name: system_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO640C
+Package:     TQFP100
+Performance: 3
+Loading device for application trce from file 'mj5g12x10.nph' in environment: /usr/local/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.17.
+Performance Hardware Data Status: Version 1.124.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Mon Aug 19 10:36:15 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 3 -sphld m -o FSK_Transmitter_impl1.twr -gui -msgset /home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/promote.xml FSK_Transmitter_impl1.ncd FSK_Transmitter_impl1.prf 
+Design file:     FSK_Transmitter_impl1.ncd
+Preference file: FSK_Transmitter_impl1.prf
+Device,speed:    LCMXO640C,3
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "i_fpga_clock_c" 183.722000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 6.010ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/dut_PDM1/count_cycles_397__i0  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/dut_PDM1/count_cycles_397__i13  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_397__i12
+
+   Delay:              10.827ns  (46.9% logic, 53.1% route), 18 logic levels.
+
+ Constraint Details:
+
+     10.827ns physical path delay fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_101 exceeds
+      5.443ns delay constraint less
+      0.000ns skew and
+      0.626ns LSR_SET requirement (totaling 4.817ns) by 6.010ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_101:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.560      R6C6A.CLK to       R6C6A.Q0 fsk_gen_inst/dut_PDM1/SLICE_47 (from i_fpga_clock_c)
+ROUTE         2     1.564       R6C6A.Q0 to       R4C6A.B0 fsk_gen_inst/dut_PDM1/count_cycles_0
+B0TOFCO_DE  ---     0.882       R4C6A.B0 to      R4C6A.FCO fsk_gen_inst/dut_PDM1/SLICE_58
+ROUTE         1     0.000      R4C6A.FCO to      R4C6B.FCI fsk_gen_inst/dut_PDM1/n3079
+FCITOFCO_D  ---     0.141      R4C6B.FCI to      R4C6B.FCO fsk_gen_inst/dut_PDM1/SLICE_57
+ROUTE         1     0.000      R4C6B.FCO to      R4C6C.FCI fsk_gen_inst/dut_PDM1/n3080
+FCITOFCO_D  ---     0.141      R4C6C.FCI to      R4C6C.FCO fsk_gen_inst/dut_PDM1/SLICE_56
+ROUTE         1     0.000      R4C6C.FCO to      R4C6D.FCI fsk_gen_inst/dut_PDM1/n3081
+FCITOFCO_D  ---     0.141      R4C6D.FCI to      R4C6D.FCO fsk_gen_inst/dut_PDM1/SLICE_55
+ROUTE         1     0.000      R4C6D.FCO to      R4C7A.FCI fsk_gen_inst/dut_PDM1/n3082
+FCITOFCO_D  ---     0.141      R4C7A.FCI to      R4C7A.FCO fsk_gen_inst/dut_PDM1/SLICE_54
+ROUTE         1     0.000      R4C7A.FCO to      R4C7B.FCI fsk_gen_inst/dut_PDM1/n3083
+FCITOFCO_D  ---     0.141      R4C7B.FCI to      R4C7B.FCO fsk_gen_inst/dut_PDM1/SLICE_45
+ROUTE         1     0.000      R4C7B.FCO to      R4C7C.FCI fsk_gen_inst/dut_PDM1/n3084
+FCITOFCO_D  ---     0.141      R4C7C.FCI to      R4C7C.FCO fsk_gen_inst/dut_PDM1/SLICE_44
+ROUTE         1     0.000      R4C7C.FCO to      R4C7D.FCI fsk_gen_inst/dut_PDM1/n3085
+FCITOFCO_D  ---     0.141      R4C7D.FCI to      R4C7D.FCO fsk_gen_inst/dut_PDM1/SLICE_43
+ROUTE         1     0.000      R4C7D.FCO to      R4C8A.FCI fsk_gen_inst/dut_PDM1/n3086
+FCITOFCO_D  ---     0.141      R4C8A.FCI to      R4C8A.FCO fsk_gen_inst/dut_PDM1/SLICE_42
+ROUTE         1     0.000      R4C8A.FCO to      R4C8B.FCI fsk_gen_inst/dut_PDM1/n3087
+FCITOFCO_D  ---     0.141      R4C8B.FCI to      R4C8B.FCO fsk_gen_inst/dut_PDM1/SLICE_41
+ROUTE         1     0.000      R4C8B.FCO to      R4C8C.FCI fsk_gen_inst/dut_PDM1/n3088
+FCITOFCO_D  ---     0.141      R4C8C.FCI to      R4C8C.FCO fsk_gen_inst/dut_PDM1/SLICE_40
+ROUTE         1     0.000      R4C8C.FCO to      R4C8D.FCI fsk_gen_inst/dut_PDM1/n3089
+FCITOFCO_D  ---     0.141      R4C8D.FCI to      R4C8D.FCO fsk_gen_inst/dut_PDM1/SLICE_39
+ROUTE         1     0.000      R4C8D.FCO to      R4C9A.FCI fsk_gen_inst/dut_PDM1/n3090
+FCITOFCO_D  ---     0.141      R4C9A.FCI to      R4C9A.FCO fsk_gen_inst/dut_PDM1/SLICE_38
+ROUTE         1     0.000      R4C9A.FCO to      R4C9B.FCI fsk_gen_inst/dut_PDM1/n3091
+FCITOFCO_D  ---     0.141      R4C9B.FCI to      R4C9B.FCO fsk_gen_inst/dut_PDM1/SLICE_37
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI fsk_gen_inst/dut_PDM1/n3092
+FCITOFCO_D  ---     0.141      R4C9C.FCI to      R4C9C.FCO fsk_gen_inst/dut_PDM1/SLICE_36
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI fsk_gen_inst/dut_PDM1/n3093
+TLATCH_DEL  ---     1.287      R4C9D.FCI to       R4C9D.Q1 fsk_gen_inst/dut_PDM1/SLICE_35
+ROUTE         1     2.108       R4C9D.Q1 to       R8C2B.D1 fsk_gen_inst/dut_PDM1/PDM_Signal_N_654
+CTOF_DEL    ---     0.371       R8C2B.D1 to       R8C2B.F1 fsk_gen_inst/SLICE_136
+ROUTE        22     2.081       R8C2B.F1 to      R6C7C.LSR fsk_gen_inst/dut_PDM1/i_fpga_clock_c_enable_33 (to i_fpga_clock_c)
+                  --------
+                   10.827   (46.9% logic, 53.1% route), 18 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_47:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C6A.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_101:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C7C.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 6.010ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/dut_PDM1/count_cycles_397__i0  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/dut_PDM1/count_cycles_397__i9  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_397__i8
+
+   Delay:              10.827ns  (46.9% logic, 53.1% route), 18 logic levels.
+
+ Constraint Details:
+
+     10.827ns physical path delay fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_103 exceeds
+      5.443ns delay constraint less
+      0.000ns skew and
+      0.626ns LSR_SET requirement (totaling 4.817ns) by 6.010ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_103:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.560      R6C6A.CLK to       R6C6A.Q0 fsk_gen_inst/dut_PDM1/SLICE_47 (from i_fpga_clock_c)
+ROUTE         2     1.564       R6C6A.Q0 to       R4C6A.B0 fsk_gen_inst/dut_PDM1/count_cycles_0
+B0TOFCO_DE  ---     0.882       R4C6A.B0 to      R4C6A.FCO fsk_gen_inst/dut_PDM1/SLICE_58
+ROUTE         1     0.000      R4C6A.FCO to      R4C6B.FCI fsk_gen_inst/dut_PDM1/n3079
+FCITOFCO_D  ---     0.141      R4C6B.FCI to      R4C6B.FCO fsk_gen_inst/dut_PDM1/SLICE_57
+ROUTE         1     0.000      R4C6B.FCO to      R4C6C.FCI fsk_gen_inst/dut_PDM1/n3080
+FCITOFCO_D  ---     0.141      R4C6C.FCI to      R4C6C.FCO fsk_gen_inst/dut_PDM1/SLICE_56
+ROUTE         1     0.000      R4C6C.FCO to      R4C6D.FCI fsk_gen_inst/dut_PDM1/n3081
+FCITOFCO_D  ---     0.141      R4C6D.FCI to      R4C6D.FCO fsk_gen_inst/dut_PDM1/SLICE_55
+ROUTE         1     0.000      R4C6D.FCO to      R4C7A.FCI fsk_gen_inst/dut_PDM1/n3082
+FCITOFCO_D  ---     0.141      R4C7A.FCI to      R4C7A.FCO fsk_gen_inst/dut_PDM1/SLICE_54
+ROUTE         1     0.000      R4C7A.FCO to      R4C7B.FCI fsk_gen_inst/dut_PDM1/n3083
+FCITOFCO_D  ---     0.141      R4C7B.FCI to      R4C7B.FCO fsk_gen_inst/dut_PDM1/SLICE_45
+ROUTE         1     0.000      R4C7B.FCO to      R4C7C.FCI fsk_gen_inst/dut_PDM1/n3084
+FCITOFCO_D  ---     0.141      R4C7C.FCI to      R4C7C.FCO fsk_gen_inst/dut_PDM1/SLICE_44
+ROUTE         1     0.000      R4C7C.FCO to      R4C7D.FCI fsk_gen_inst/dut_PDM1/n3085
+FCITOFCO_D  ---     0.141      R4C7D.FCI to      R4C7D.FCO fsk_gen_inst/dut_PDM1/SLICE_43
+ROUTE         1     0.000      R4C7D.FCO to      R4C8A.FCI fsk_gen_inst/dut_PDM1/n3086
+FCITOFCO_D  ---     0.141      R4C8A.FCI to      R4C8A.FCO fsk_gen_inst/dut_PDM1/SLICE_42
+ROUTE         1     0.000      R4C8A.FCO to      R4C8B.FCI fsk_gen_inst/dut_PDM1/n3087
+FCITOFCO_D  ---     0.141      R4C8B.FCI to      R4C8B.FCO fsk_gen_inst/dut_PDM1/SLICE_41
+ROUTE         1     0.000      R4C8B.FCO to      R4C8C.FCI fsk_gen_inst/dut_PDM1/n3088
+FCITOFCO_D  ---     0.141      R4C8C.FCI to      R4C8C.FCO fsk_gen_inst/dut_PDM1/SLICE_40
+ROUTE         1     0.000      R4C8C.FCO to      R4C8D.FCI fsk_gen_inst/dut_PDM1/n3089
+FCITOFCO_D  ---     0.141      R4C8D.FCI to      R4C8D.FCO fsk_gen_inst/dut_PDM1/SLICE_39
+ROUTE         1     0.000      R4C8D.FCO to      R4C9A.FCI fsk_gen_inst/dut_PDM1/n3090
+FCITOFCO_D  ---     0.141      R4C9A.FCI to      R4C9A.FCO fsk_gen_inst/dut_PDM1/SLICE_38
+ROUTE         1     0.000      R4C9A.FCO to      R4C9B.FCI fsk_gen_inst/dut_PDM1/n3091
+FCITOFCO_D  ---     0.141      R4C9B.FCI to      R4C9B.FCO fsk_gen_inst/dut_PDM1/SLICE_37
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI fsk_gen_inst/dut_PDM1/n3092
+FCITOFCO_D  ---     0.141      R4C9C.FCI to      R4C9C.FCO fsk_gen_inst/dut_PDM1/SLICE_36
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI fsk_gen_inst/dut_PDM1/n3093
+TLATCH_DEL  ---     1.287      R4C9D.FCI to       R4C9D.Q1 fsk_gen_inst/dut_PDM1/SLICE_35
+ROUTE         1     2.108       R4C9D.Q1 to       R8C2B.D1 fsk_gen_inst/dut_PDM1/PDM_Signal_N_654
+CTOF_DEL    ---     0.371       R8C2B.D1 to       R8C2B.F1 fsk_gen_inst/SLICE_136
+ROUTE        22     2.081       R8C2B.F1 to      R6C7A.LSR fsk_gen_inst/dut_PDM1/i_fpga_clock_c_enable_33 (to i_fpga_clock_c)
+                  --------
+                   10.827   (46.9% logic, 53.1% route), 18 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_47:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C6A.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_103:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C7A.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 6.010ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/dut_PDM1/count_cycles_397__i0  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/dut_PDM1/count_cycles_397__i11  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_397__i10
+
+   Delay:              10.827ns  (46.9% logic, 53.1% route), 18 logic levels.
+
+ Constraint Details:
+
+     10.827ns physical path delay fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_102 exceeds
+      5.443ns delay constraint less
+      0.000ns skew and
+      0.626ns LSR_SET requirement (totaling 4.817ns) by 6.010ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_102:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.560      R6C6A.CLK to       R6C6A.Q0 fsk_gen_inst/dut_PDM1/SLICE_47 (from i_fpga_clock_c)
+ROUTE         2     1.564       R6C6A.Q0 to       R4C6A.B0 fsk_gen_inst/dut_PDM1/count_cycles_0
+B0TOFCO_DE  ---     0.882       R4C6A.B0 to      R4C6A.FCO fsk_gen_inst/dut_PDM1/SLICE_58
+ROUTE         1     0.000      R4C6A.FCO to      R4C6B.FCI fsk_gen_inst/dut_PDM1/n3079
+FCITOFCO_D  ---     0.141      R4C6B.FCI to      R4C6B.FCO fsk_gen_inst/dut_PDM1/SLICE_57
+ROUTE         1     0.000      R4C6B.FCO to      R4C6C.FCI fsk_gen_inst/dut_PDM1/n3080
+FCITOFCO_D  ---     0.141      R4C6C.FCI to      R4C6C.FCO fsk_gen_inst/dut_PDM1/SLICE_56
+ROUTE         1     0.000      R4C6C.FCO to      R4C6D.FCI fsk_gen_inst/dut_PDM1/n3081
+FCITOFCO_D  ---     0.141      R4C6D.FCI to      R4C6D.FCO fsk_gen_inst/dut_PDM1/SLICE_55
+ROUTE         1     0.000      R4C6D.FCO to      R4C7A.FCI fsk_gen_inst/dut_PDM1/n3082
+FCITOFCO_D  ---     0.141      R4C7A.FCI to      R4C7A.FCO fsk_gen_inst/dut_PDM1/SLICE_54
+ROUTE         1     0.000      R4C7A.FCO to      R4C7B.FCI fsk_gen_inst/dut_PDM1/n3083
+FCITOFCO_D  ---     0.141      R4C7B.FCI to      R4C7B.FCO fsk_gen_inst/dut_PDM1/SLICE_45
+ROUTE         1     0.000      R4C7B.FCO to      R4C7C.FCI fsk_gen_inst/dut_PDM1/n3084
+FCITOFCO_D  ---     0.141      R4C7C.FCI to      R4C7C.FCO fsk_gen_inst/dut_PDM1/SLICE_44
+ROUTE         1     0.000      R4C7C.FCO to      R4C7D.FCI fsk_gen_inst/dut_PDM1/n3085
+FCITOFCO_D  ---     0.141      R4C7D.FCI to      R4C7D.FCO fsk_gen_inst/dut_PDM1/SLICE_43
+ROUTE         1     0.000      R4C7D.FCO to      R4C8A.FCI fsk_gen_inst/dut_PDM1/n3086
+FCITOFCO_D  ---     0.141      R4C8A.FCI to      R4C8A.FCO fsk_gen_inst/dut_PDM1/SLICE_42
+ROUTE         1     0.000      R4C8A.FCO to      R4C8B.FCI fsk_gen_inst/dut_PDM1/n3087
+FCITOFCO_D  ---     0.141      R4C8B.FCI to      R4C8B.FCO fsk_gen_inst/dut_PDM1/SLICE_41
+ROUTE         1     0.000      R4C8B.FCO to      R4C8C.FCI fsk_gen_inst/dut_PDM1/n3088
+FCITOFCO_D  ---     0.141      R4C8C.FCI to      R4C8C.FCO fsk_gen_inst/dut_PDM1/SLICE_40
+ROUTE         1     0.000      R4C8C.FCO to      R4C8D.FCI fsk_gen_inst/dut_PDM1/n3089
+FCITOFCO_D  ---     0.141      R4C8D.FCI to      R4C8D.FCO fsk_gen_inst/dut_PDM1/SLICE_39
+ROUTE         1     0.000      R4C8D.FCO to      R4C9A.FCI fsk_gen_inst/dut_PDM1/n3090
+FCITOFCO_D  ---     0.141      R4C9A.FCI to      R4C9A.FCO fsk_gen_inst/dut_PDM1/SLICE_38
+ROUTE         1     0.000      R4C9A.FCO to      R4C9B.FCI fsk_gen_inst/dut_PDM1/n3091
+FCITOFCO_D  ---     0.141      R4C9B.FCI to      R4C9B.FCO fsk_gen_inst/dut_PDM1/SLICE_37
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI fsk_gen_inst/dut_PDM1/n3092
+FCITOFCO_D  ---     0.141      R4C9C.FCI to      R4C9C.FCO fsk_gen_inst/dut_PDM1/SLICE_36
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI fsk_gen_inst/dut_PDM1/n3093
+TLATCH_DEL  ---     1.287      R4C9D.FCI to       R4C9D.Q1 fsk_gen_inst/dut_PDM1/SLICE_35
+ROUTE         1     2.108       R4C9D.Q1 to       R8C2B.D1 fsk_gen_inst/dut_PDM1/PDM_Signal_N_654
+CTOF_DEL    ---     0.371       R8C2B.D1 to       R8C2B.F1 fsk_gen_inst/SLICE_136
+ROUTE        22     2.081       R8C2B.F1 to      R6C7B.LSR fsk_gen_inst/dut_PDM1/i_fpga_clock_c_enable_33 (to i_fpga_clock_c)
+                  --------
+                   10.827   (46.9% logic, 53.1% route), 18 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_47:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C6A.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_102:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C7B.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 6.010ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/dut_PDM1/count_cycles_397__i0  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/dut_PDM1/count_cycles_397__i15  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_397__i14
+
+   Delay:              10.827ns  (46.9% logic, 53.1% route), 18 logic levels.
+
+ Constraint Details:
+
+     10.827ns physical path delay fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_100 exceeds
+      5.443ns delay constraint less
+      0.000ns skew and
+      0.626ns LSR_SET requirement (totaling 4.817ns) by 6.010ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_100:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.560      R6C6A.CLK to       R6C6A.Q0 fsk_gen_inst/dut_PDM1/SLICE_47 (from i_fpga_clock_c)
+ROUTE         2     1.564       R6C6A.Q0 to       R4C6A.B0 fsk_gen_inst/dut_PDM1/count_cycles_0
+B0TOFCO_DE  ---     0.882       R4C6A.B0 to      R4C6A.FCO fsk_gen_inst/dut_PDM1/SLICE_58
+ROUTE         1     0.000      R4C6A.FCO to      R4C6B.FCI fsk_gen_inst/dut_PDM1/n3079
+FCITOFCO_D  ---     0.141      R4C6B.FCI to      R4C6B.FCO fsk_gen_inst/dut_PDM1/SLICE_57
+ROUTE         1     0.000      R4C6B.FCO to      R4C6C.FCI fsk_gen_inst/dut_PDM1/n3080
+FCITOFCO_D  ---     0.141      R4C6C.FCI to      R4C6C.FCO fsk_gen_inst/dut_PDM1/SLICE_56
+ROUTE         1     0.000      R4C6C.FCO to      R4C6D.FCI fsk_gen_inst/dut_PDM1/n3081
+FCITOFCO_D  ---     0.141      R4C6D.FCI to      R4C6D.FCO fsk_gen_inst/dut_PDM1/SLICE_55
+ROUTE         1     0.000      R4C6D.FCO to      R4C7A.FCI fsk_gen_inst/dut_PDM1/n3082
+FCITOFCO_D  ---     0.141      R4C7A.FCI to      R4C7A.FCO fsk_gen_inst/dut_PDM1/SLICE_54
+ROUTE         1     0.000      R4C7A.FCO to      R4C7B.FCI fsk_gen_inst/dut_PDM1/n3083
+FCITOFCO_D  ---     0.141      R4C7B.FCI to      R4C7B.FCO fsk_gen_inst/dut_PDM1/SLICE_45
+ROUTE         1     0.000      R4C7B.FCO to      R4C7C.FCI fsk_gen_inst/dut_PDM1/n3084
+FCITOFCO_D  ---     0.141      R4C7C.FCI to      R4C7C.FCO fsk_gen_inst/dut_PDM1/SLICE_44
+ROUTE         1     0.000      R4C7C.FCO to      R4C7D.FCI fsk_gen_inst/dut_PDM1/n3085
+FCITOFCO_D  ---     0.141      R4C7D.FCI to      R4C7D.FCO fsk_gen_inst/dut_PDM1/SLICE_43
+ROUTE         1     0.000      R4C7D.FCO to      R4C8A.FCI fsk_gen_inst/dut_PDM1/n3086
+FCITOFCO_D  ---     0.141      R4C8A.FCI to      R4C8A.FCO fsk_gen_inst/dut_PDM1/SLICE_42
+ROUTE         1     0.000      R4C8A.FCO to      R4C8B.FCI fsk_gen_inst/dut_PDM1/n3087
+FCITOFCO_D  ---     0.141      R4C8B.FCI to      R4C8B.FCO fsk_gen_inst/dut_PDM1/SLICE_41
+ROUTE         1     0.000      R4C8B.FCO to      R4C8C.FCI fsk_gen_inst/dut_PDM1/n3088
+FCITOFCO_D  ---     0.141      R4C8C.FCI to      R4C8C.FCO fsk_gen_inst/dut_PDM1/SLICE_40
+ROUTE         1     0.000      R4C8C.FCO to      R4C8D.FCI fsk_gen_inst/dut_PDM1/n3089
+FCITOFCO_D  ---     0.141      R4C8D.FCI to      R4C8D.FCO fsk_gen_inst/dut_PDM1/SLICE_39
+ROUTE         1     0.000      R4C8D.FCO to      R4C9A.FCI fsk_gen_inst/dut_PDM1/n3090
+FCITOFCO_D  ---     0.141      R4C9A.FCI to      R4C9A.FCO fsk_gen_inst/dut_PDM1/SLICE_38
+ROUTE         1     0.000      R4C9A.FCO to      R4C9B.FCI fsk_gen_inst/dut_PDM1/n3091
+FCITOFCO_D  ---     0.141      R4C9B.FCI to      R4C9B.FCO fsk_gen_inst/dut_PDM1/SLICE_37
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI fsk_gen_inst/dut_PDM1/n3092
+FCITOFCO_D  ---     0.141      R4C9C.FCI to      R4C9C.FCO fsk_gen_inst/dut_PDM1/SLICE_36
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI fsk_gen_inst/dut_PDM1/n3093
+TLATCH_DEL  ---     1.287      R4C9D.FCI to       R4C9D.Q1 fsk_gen_inst/dut_PDM1/SLICE_35
+ROUTE         1     2.108       R4C9D.Q1 to       R8C2B.D1 fsk_gen_inst/dut_PDM1/PDM_Signal_N_654
+CTOF_DEL    ---     0.371       R8C2B.D1 to       R8C2B.F1 fsk_gen_inst/SLICE_136
+ROUTE        22     2.081       R8C2B.F1 to      R6C7D.LSR fsk_gen_inst/dut_PDM1/i_fpga_clock_c_enable_33 (to i_fpga_clock_c)
+                  --------
+                   10.827   (46.9% logic, 53.1% route), 18 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_47:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C6A.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_100:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C7D.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 5.846ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/dut_PDM1/count_cycles_397__i1  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/dut_PDM1/count_cycles_397__i13  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_397__i12
+
+   Delay:              10.663ns  (47.6% logic, 52.4% route), 18 logic levels.
+
+ Constraint Details:
+
+     10.663ns physical path delay fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_101 exceeds
+      5.443ns delay constraint less
+      0.000ns skew and
+      0.626ns LSR_SET requirement (totaling 4.817ns) by 5.846ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_101:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.560      R6C6A.CLK to       R6C6A.Q1 fsk_gen_inst/dut_PDM1/SLICE_47 (from i_fpga_clock_c)
+ROUTE         2     1.400       R6C6A.Q1 to       R4C6A.A0 fsk_gen_inst/dut_PDM1/count_cycles_1
+A0TOFCO_DE  ---     0.882       R4C6A.A0 to      R4C6A.FCO fsk_gen_inst/dut_PDM1/SLICE_58
+ROUTE         1     0.000      R4C6A.FCO to      R4C6B.FCI fsk_gen_inst/dut_PDM1/n3079
+FCITOFCO_D  ---     0.141      R4C6B.FCI to      R4C6B.FCO fsk_gen_inst/dut_PDM1/SLICE_57
+ROUTE         1     0.000      R4C6B.FCO to      R4C6C.FCI fsk_gen_inst/dut_PDM1/n3080
+FCITOFCO_D  ---     0.141      R4C6C.FCI to      R4C6C.FCO fsk_gen_inst/dut_PDM1/SLICE_56
+ROUTE         1     0.000      R4C6C.FCO to      R4C6D.FCI fsk_gen_inst/dut_PDM1/n3081
+FCITOFCO_D  ---     0.141      R4C6D.FCI to      R4C6D.FCO fsk_gen_inst/dut_PDM1/SLICE_55
+ROUTE         1     0.000      R4C6D.FCO to      R4C7A.FCI fsk_gen_inst/dut_PDM1/n3082
+FCITOFCO_D  ---     0.141      R4C7A.FCI to      R4C7A.FCO fsk_gen_inst/dut_PDM1/SLICE_54
+ROUTE         1     0.000      R4C7A.FCO to      R4C7B.FCI fsk_gen_inst/dut_PDM1/n3083
+FCITOFCO_D  ---     0.141      R4C7B.FCI to      R4C7B.FCO fsk_gen_inst/dut_PDM1/SLICE_45
+ROUTE         1     0.000      R4C7B.FCO to      R4C7C.FCI fsk_gen_inst/dut_PDM1/n3084
+FCITOFCO_D  ---     0.141      R4C7C.FCI to      R4C7C.FCO fsk_gen_inst/dut_PDM1/SLICE_44
+ROUTE         1     0.000      R4C7C.FCO to      R4C7D.FCI fsk_gen_inst/dut_PDM1/n3085
+FCITOFCO_D  ---     0.141      R4C7D.FCI to      R4C7D.FCO fsk_gen_inst/dut_PDM1/SLICE_43
+ROUTE         1     0.000      R4C7D.FCO to      R4C8A.FCI fsk_gen_inst/dut_PDM1/n3086
+FCITOFCO_D  ---     0.141      R4C8A.FCI to      R4C8A.FCO fsk_gen_inst/dut_PDM1/SLICE_42
+ROUTE         1     0.000      R4C8A.FCO to      R4C8B.FCI fsk_gen_inst/dut_PDM1/n3087
+FCITOFCO_D  ---     0.141      R4C8B.FCI to      R4C8B.FCO fsk_gen_inst/dut_PDM1/SLICE_41
+ROUTE         1     0.000      R4C8B.FCO to      R4C8C.FCI fsk_gen_inst/dut_PDM1/n3088
+FCITOFCO_D  ---     0.141      R4C8C.FCI to      R4C8C.FCO fsk_gen_inst/dut_PDM1/SLICE_40
+ROUTE         1     0.000      R4C8C.FCO to      R4C8D.FCI fsk_gen_inst/dut_PDM1/n3089
+FCITOFCO_D  ---     0.141      R4C8D.FCI to      R4C8D.FCO fsk_gen_inst/dut_PDM1/SLICE_39
+ROUTE         1     0.000      R4C8D.FCO to      R4C9A.FCI fsk_gen_inst/dut_PDM1/n3090
+FCITOFCO_D  ---     0.141      R4C9A.FCI to      R4C9A.FCO fsk_gen_inst/dut_PDM1/SLICE_38
+ROUTE         1     0.000      R4C9A.FCO to      R4C9B.FCI fsk_gen_inst/dut_PDM1/n3091
+FCITOFCO_D  ---     0.141      R4C9B.FCI to      R4C9B.FCO fsk_gen_inst/dut_PDM1/SLICE_37
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI fsk_gen_inst/dut_PDM1/n3092
+FCITOFCO_D  ---     0.141      R4C9C.FCI to      R4C9C.FCO fsk_gen_inst/dut_PDM1/SLICE_36
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI fsk_gen_inst/dut_PDM1/n3093
+TLATCH_DEL  ---     1.287      R4C9D.FCI to       R4C9D.Q1 fsk_gen_inst/dut_PDM1/SLICE_35
+ROUTE         1     2.108       R4C9D.Q1 to       R8C2B.D1 fsk_gen_inst/dut_PDM1/PDM_Signal_N_654
+CTOF_DEL    ---     0.371       R8C2B.D1 to       R8C2B.F1 fsk_gen_inst/SLICE_136
+ROUTE        22     2.081       R8C2B.F1 to      R6C7C.LSR fsk_gen_inst/dut_PDM1/i_fpga_clock_c_enable_33 (to i_fpga_clock_c)
+                  --------
+                   10.663   (47.6% logic, 52.4% route), 18 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_47:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C6A.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_101:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C7C.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 5.846ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/dut_PDM1/count_cycles_397__i1  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/dut_PDM1/count_cycles_397__i9  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_397__i8
+
+   Delay:              10.663ns  (47.6% logic, 52.4% route), 18 logic levels.
+
+ Constraint Details:
+
+     10.663ns physical path delay fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_103 exceeds
+      5.443ns delay constraint less
+      0.000ns skew and
+      0.626ns LSR_SET requirement (totaling 4.817ns) by 5.846ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_103:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.560      R6C6A.CLK to       R6C6A.Q1 fsk_gen_inst/dut_PDM1/SLICE_47 (from i_fpga_clock_c)
+ROUTE         2     1.400       R6C6A.Q1 to       R4C6A.A0 fsk_gen_inst/dut_PDM1/count_cycles_1
+A0TOFCO_DE  ---     0.882       R4C6A.A0 to      R4C6A.FCO fsk_gen_inst/dut_PDM1/SLICE_58
+ROUTE         1     0.000      R4C6A.FCO to      R4C6B.FCI fsk_gen_inst/dut_PDM1/n3079
+FCITOFCO_D  ---     0.141      R4C6B.FCI to      R4C6B.FCO fsk_gen_inst/dut_PDM1/SLICE_57
+ROUTE         1     0.000      R4C6B.FCO to      R4C6C.FCI fsk_gen_inst/dut_PDM1/n3080
+FCITOFCO_D  ---     0.141      R4C6C.FCI to      R4C6C.FCO fsk_gen_inst/dut_PDM1/SLICE_56
+ROUTE         1     0.000      R4C6C.FCO to      R4C6D.FCI fsk_gen_inst/dut_PDM1/n3081
+FCITOFCO_D  ---     0.141      R4C6D.FCI to      R4C6D.FCO fsk_gen_inst/dut_PDM1/SLICE_55
+ROUTE         1     0.000      R4C6D.FCO to      R4C7A.FCI fsk_gen_inst/dut_PDM1/n3082
+FCITOFCO_D  ---     0.141      R4C7A.FCI to      R4C7A.FCO fsk_gen_inst/dut_PDM1/SLICE_54
+ROUTE         1     0.000      R4C7A.FCO to      R4C7B.FCI fsk_gen_inst/dut_PDM1/n3083
+FCITOFCO_D  ---     0.141      R4C7B.FCI to      R4C7B.FCO fsk_gen_inst/dut_PDM1/SLICE_45
+ROUTE         1     0.000      R4C7B.FCO to      R4C7C.FCI fsk_gen_inst/dut_PDM1/n3084
+FCITOFCO_D  ---     0.141      R4C7C.FCI to      R4C7C.FCO fsk_gen_inst/dut_PDM1/SLICE_44
+ROUTE         1     0.000      R4C7C.FCO to      R4C7D.FCI fsk_gen_inst/dut_PDM1/n3085
+FCITOFCO_D  ---     0.141      R4C7D.FCI to      R4C7D.FCO fsk_gen_inst/dut_PDM1/SLICE_43
+ROUTE         1     0.000      R4C7D.FCO to      R4C8A.FCI fsk_gen_inst/dut_PDM1/n3086
+FCITOFCO_D  ---     0.141      R4C8A.FCI to      R4C8A.FCO fsk_gen_inst/dut_PDM1/SLICE_42
+ROUTE         1     0.000      R4C8A.FCO to      R4C8B.FCI fsk_gen_inst/dut_PDM1/n3087
+FCITOFCO_D  ---     0.141      R4C8B.FCI to      R4C8B.FCO fsk_gen_inst/dut_PDM1/SLICE_41
+ROUTE         1     0.000      R4C8B.FCO to      R4C8C.FCI fsk_gen_inst/dut_PDM1/n3088
+FCITOFCO_D  ---     0.141      R4C8C.FCI to      R4C8C.FCO fsk_gen_inst/dut_PDM1/SLICE_40
+ROUTE         1     0.000      R4C8C.FCO to      R4C8D.FCI fsk_gen_inst/dut_PDM1/n3089
+FCITOFCO_D  ---     0.141      R4C8D.FCI to      R4C8D.FCO fsk_gen_inst/dut_PDM1/SLICE_39
+ROUTE         1     0.000      R4C8D.FCO to      R4C9A.FCI fsk_gen_inst/dut_PDM1/n3090
+FCITOFCO_D  ---     0.141      R4C9A.FCI to      R4C9A.FCO fsk_gen_inst/dut_PDM1/SLICE_38
+ROUTE         1     0.000      R4C9A.FCO to      R4C9B.FCI fsk_gen_inst/dut_PDM1/n3091
+FCITOFCO_D  ---     0.141      R4C9B.FCI to      R4C9B.FCO fsk_gen_inst/dut_PDM1/SLICE_37
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI fsk_gen_inst/dut_PDM1/n3092
+FCITOFCO_D  ---     0.141      R4C9C.FCI to      R4C9C.FCO fsk_gen_inst/dut_PDM1/SLICE_36
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI fsk_gen_inst/dut_PDM1/n3093
+TLATCH_DEL  ---     1.287      R4C9D.FCI to       R4C9D.Q1 fsk_gen_inst/dut_PDM1/SLICE_35
+ROUTE         1     2.108       R4C9D.Q1 to       R8C2B.D1 fsk_gen_inst/dut_PDM1/PDM_Signal_N_654
+CTOF_DEL    ---     0.371       R8C2B.D1 to       R8C2B.F1 fsk_gen_inst/SLICE_136
+ROUTE        22     2.081       R8C2B.F1 to      R6C7A.LSR fsk_gen_inst/dut_PDM1/i_fpga_clock_c_enable_33 (to i_fpga_clock_c)
+                  --------
+                   10.663   (47.6% logic, 52.4% route), 18 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_47:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C6A.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_103:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C7A.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 5.846ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/dut_PDM1/count_cycles_397__i1  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/dut_PDM1/count_cycles_397__i15  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_397__i14
+
+   Delay:              10.663ns  (47.6% logic, 52.4% route), 18 logic levels.
+
+ Constraint Details:
+
+     10.663ns physical path delay fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_100 exceeds
+      5.443ns delay constraint less
+      0.000ns skew and
+      0.626ns LSR_SET requirement (totaling 4.817ns) by 5.846ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_100:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.560      R6C6A.CLK to       R6C6A.Q1 fsk_gen_inst/dut_PDM1/SLICE_47 (from i_fpga_clock_c)
+ROUTE         2     1.400       R6C6A.Q1 to       R4C6A.A0 fsk_gen_inst/dut_PDM1/count_cycles_1
+A0TOFCO_DE  ---     0.882       R4C6A.A0 to      R4C6A.FCO fsk_gen_inst/dut_PDM1/SLICE_58
+ROUTE         1     0.000      R4C6A.FCO to      R4C6B.FCI fsk_gen_inst/dut_PDM1/n3079
+FCITOFCO_D  ---     0.141      R4C6B.FCI to      R4C6B.FCO fsk_gen_inst/dut_PDM1/SLICE_57
+ROUTE         1     0.000      R4C6B.FCO to      R4C6C.FCI fsk_gen_inst/dut_PDM1/n3080
+FCITOFCO_D  ---     0.141      R4C6C.FCI to      R4C6C.FCO fsk_gen_inst/dut_PDM1/SLICE_56
+ROUTE         1     0.000      R4C6C.FCO to      R4C6D.FCI fsk_gen_inst/dut_PDM1/n3081
+FCITOFCO_D  ---     0.141      R4C6D.FCI to      R4C6D.FCO fsk_gen_inst/dut_PDM1/SLICE_55
+ROUTE         1     0.000      R4C6D.FCO to      R4C7A.FCI fsk_gen_inst/dut_PDM1/n3082
+FCITOFCO_D  ---     0.141      R4C7A.FCI to      R4C7A.FCO fsk_gen_inst/dut_PDM1/SLICE_54
+ROUTE         1     0.000      R4C7A.FCO to      R4C7B.FCI fsk_gen_inst/dut_PDM1/n3083
+FCITOFCO_D  ---     0.141      R4C7B.FCI to      R4C7B.FCO fsk_gen_inst/dut_PDM1/SLICE_45
+ROUTE         1     0.000      R4C7B.FCO to      R4C7C.FCI fsk_gen_inst/dut_PDM1/n3084
+FCITOFCO_D  ---     0.141      R4C7C.FCI to      R4C7C.FCO fsk_gen_inst/dut_PDM1/SLICE_44
+ROUTE         1     0.000      R4C7C.FCO to      R4C7D.FCI fsk_gen_inst/dut_PDM1/n3085
+FCITOFCO_D  ---     0.141      R4C7D.FCI to      R4C7D.FCO fsk_gen_inst/dut_PDM1/SLICE_43
+ROUTE         1     0.000      R4C7D.FCO to      R4C8A.FCI fsk_gen_inst/dut_PDM1/n3086
+FCITOFCO_D  ---     0.141      R4C8A.FCI to      R4C8A.FCO fsk_gen_inst/dut_PDM1/SLICE_42
+ROUTE         1     0.000      R4C8A.FCO to      R4C8B.FCI fsk_gen_inst/dut_PDM1/n3087
+FCITOFCO_D  ---     0.141      R4C8B.FCI to      R4C8B.FCO fsk_gen_inst/dut_PDM1/SLICE_41
+ROUTE         1     0.000      R4C8B.FCO to      R4C8C.FCI fsk_gen_inst/dut_PDM1/n3088
+FCITOFCO_D  ---     0.141      R4C8C.FCI to      R4C8C.FCO fsk_gen_inst/dut_PDM1/SLICE_40
+ROUTE         1     0.000      R4C8C.FCO to      R4C8D.FCI fsk_gen_inst/dut_PDM1/n3089
+FCITOFCO_D  ---     0.141      R4C8D.FCI to      R4C8D.FCO fsk_gen_inst/dut_PDM1/SLICE_39
+ROUTE         1     0.000      R4C8D.FCO to      R4C9A.FCI fsk_gen_inst/dut_PDM1/n3090
+FCITOFCO_D  ---     0.141      R4C9A.FCI to      R4C9A.FCO fsk_gen_inst/dut_PDM1/SLICE_38
+ROUTE         1     0.000      R4C9A.FCO to      R4C9B.FCI fsk_gen_inst/dut_PDM1/n3091
+FCITOFCO_D  ---     0.141      R4C9B.FCI to      R4C9B.FCO fsk_gen_inst/dut_PDM1/SLICE_37
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI fsk_gen_inst/dut_PDM1/n3092
+FCITOFCO_D  ---     0.141      R4C9C.FCI to      R4C9C.FCO fsk_gen_inst/dut_PDM1/SLICE_36
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI fsk_gen_inst/dut_PDM1/n3093
+TLATCH_DEL  ---     1.287      R4C9D.FCI to       R4C9D.Q1 fsk_gen_inst/dut_PDM1/SLICE_35
+ROUTE         1     2.108       R4C9D.Q1 to       R8C2B.D1 fsk_gen_inst/dut_PDM1/PDM_Signal_N_654
+CTOF_DEL    ---     0.371       R8C2B.D1 to       R8C2B.F1 fsk_gen_inst/SLICE_136
+ROUTE        22     2.081       R8C2B.F1 to      R6C7D.LSR fsk_gen_inst/dut_PDM1/i_fpga_clock_c_enable_33 (to i_fpga_clock_c)
+                  --------
+                   10.663   (47.6% logic, 52.4% route), 18 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_47:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C6A.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_100:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C7D.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 5.846ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/dut_PDM1/count_cycles_397__i1  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/dut_PDM1/count_cycles_397__i11  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_397__i10
+
+   Delay:              10.663ns  (47.6% logic, 52.4% route), 18 logic levels.
+
+ Constraint Details:
+
+     10.663ns physical path delay fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_102 exceeds
+      5.443ns delay constraint less
+      0.000ns skew and
+      0.626ns LSR_SET requirement (totaling 4.817ns) by 5.846ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/dut_PDM1/SLICE_47 to fsk_gen_inst/dut_PDM1/SLICE_102:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.560      R6C6A.CLK to       R6C6A.Q1 fsk_gen_inst/dut_PDM1/SLICE_47 (from i_fpga_clock_c)
+ROUTE         2     1.400       R6C6A.Q1 to       R4C6A.A0 fsk_gen_inst/dut_PDM1/count_cycles_1
+A0TOFCO_DE  ---     0.882       R4C6A.A0 to      R4C6A.FCO fsk_gen_inst/dut_PDM1/SLICE_58
+ROUTE         1     0.000      R4C6A.FCO to      R4C6B.FCI fsk_gen_inst/dut_PDM1/n3079
+FCITOFCO_D  ---     0.141      R4C6B.FCI to      R4C6B.FCO fsk_gen_inst/dut_PDM1/SLICE_57
+ROUTE         1     0.000      R4C6B.FCO to      R4C6C.FCI fsk_gen_inst/dut_PDM1/n3080
+FCITOFCO_D  ---     0.141      R4C6C.FCI to      R4C6C.FCO fsk_gen_inst/dut_PDM1/SLICE_56
+ROUTE         1     0.000      R4C6C.FCO to      R4C6D.FCI fsk_gen_inst/dut_PDM1/n3081
+FCITOFCO_D  ---     0.141      R4C6D.FCI to      R4C6D.FCO fsk_gen_inst/dut_PDM1/SLICE_55
+ROUTE         1     0.000      R4C6D.FCO to      R4C7A.FCI fsk_gen_inst/dut_PDM1/n3082
+FCITOFCO_D  ---     0.141      R4C7A.FCI to      R4C7A.FCO fsk_gen_inst/dut_PDM1/SLICE_54
+ROUTE         1     0.000      R4C7A.FCO to      R4C7B.FCI fsk_gen_inst/dut_PDM1/n3083
+FCITOFCO_D  ---     0.141      R4C7B.FCI to      R4C7B.FCO fsk_gen_inst/dut_PDM1/SLICE_45
+ROUTE         1     0.000      R4C7B.FCO to      R4C7C.FCI fsk_gen_inst/dut_PDM1/n3084
+FCITOFCO_D  ---     0.141      R4C7C.FCI to      R4C7C.FCO fsk_gen_inst/dut_PDM1/SLICE_44
+ROUTE         1     0.000      R4C7C.FCO to      R4C7D.FCI fsk_gen_inst/dut_PDM1/n3085
+FCITOFCO_D  ---     0.141      R4C7D.FCI to      R4C7D.FCO fsk_gen_inst/dut_PDM1/SLICE_43
+ROUTE         1     0.000      R4C7D.FCO to      R4C8A.FCI fsk_gen_inst/dut_PDM1/n3086
+FCITOFCO_D  ---     0.141      R4C8A.FCI to      R4C8A.FCO fsk_gen_inst/dut_PDM1/SLICE_42
+ROUTE         1     0.000      R4C8A.FCO to      R4C8B.FCI fsk_gen_inst/dut_PDM1/n3087
+FCITOFCO_D  ---     0.141      R4C8B.FCI to      R4C8B.FCO fsk_gen_inst/dut_PDM1/SLICE_41
+ROUTE         1     0.000      R4C8B.FCO to      R4C8C.FCI fsk_gen_inst/dut_PDM1/n3088
+FCITOFCO_D  ---     0.141      R4C8C.FCI to      R4C8C.FCO fsk_gen_inst/dut_PDM1/SLICE_40
+ROUTE         1     0.000      R4C8C.FCO to      R4C8D.FCI fsk_gen_inst/dut_PDM1/n3089
+FCITOFCO_D  ---     0.141      R4C8D.FCI to      R4C8D.FCO fsk_gen_inst/dut_PDM1/SLICE_39
+ROUTE         1     0.000      R4C8D.FCO to      R4C9A.FCI fsk_gen_inst/dut_PDM1/n3090
+FCITOFCO_D  ---     0.141      R4C9A.FCI to      R4C9A.FCO fsk_gen_inst/dut_PDM1/SLICE_38
+ROUTE         1     0.000      R4C9A.FCO to      R4C9B.FCI fsk_gen_inst/dut_PDM1/n3091
+FCITOFCO_D  ---     0.141      R4C9B.FCI to      R4C9B.FCO fsk_gen_inst/dut_PDM1/SLICE_37
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI fsk_gen_inst/dut_PDM1/n3092
+FCITOFCO_D  ---     0.141      R4C9C.FCI to      R4C9C.FCO fsk_gen_inst/dut_PDM1/SLICE_36
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI fsk_gen_inst/dut_PDM1/n3093
+TLATCH_DEL  ---     1.287      R4C9D.FCI to       R4C9D.Q1 fsk_gen_inst/dut_PDM1/SLICE_35
+ROUTE         1     2.108       R4C9D.Q1 to       R8C2B.D1 fsk_gen_inst/dut_PDM1/PDM_Signal_N_654
+CTOF_DEL    ---     0.371       R8C2B.D1 to       R8C2B.F1 fsk_gen_inst/SLICE_136
+ROUTE        22     2.081       R8C2B.F1 to      R6C7B.LSR fsk_gen_inst/dut_PDM1/i_fpga_clock_c_enable_33 (to i_fpga_clock_c)
+                  --------
+                   10.663   (47.6% logic, 52.4% route), 18 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_47:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C6A.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_102:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C7B.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 5.753ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/dut_PDM1/count_cycles_397__i4  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/dut_PDM1/count_cycles_397__i15  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_397__i14
+
+   Delay:              10.570ns  (45.6% logic, 54.4% route), 17 logic levels.
+
+ Constraint Details:
+
+     10.570ns physical path delay fsk_gen_inst/dut_PDM1/SLICE_105 to fsk_gen_inst/dut_PDM1/SLICE_100 exceeds
+      5.443ns delay constraint less
+      0.000ns skew and
+      0.626ns LSR_SET requirement (totaling 4.817ns) by 5.753ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/dut_PDM1/SLICE_105 to fsk_gen_inst/dut_PDM1/SLICE_100:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.560      R6C6C.CLK to       R6C6C.Q0 fsk_gen_inst/dut_PDM1/SLICE_105 (from i_fpga_clock_c)
+ROUTE         2     1.564       R6C6C.Q0 to       R4C6B.B1 fsk_gen_inst/dut_PDM1/count_cycles_4
+B1TOFCO_DE  ---     0.766       R4C6B.B1 to      R4C6B.FCO fsk_gen_inst/dut_PDM1/SLICE_57
+ROUTE         1     0.000      R4C6B.FCO to      R4C6C.FCI fsk_gen_inst/dut_PDM1/n3080
+FCITOFCO_D  ---     0.141      R4C6C.FCI to      R4C6C.FCO fsk_gen_inst/dut_PDM1/SLICE_56
+ROUTE         1     0.000      R4C6C.FCO to      R4C6D.FCI fsk_gen_inst/dut_PDM1/n3081
+FCITOFCO_D  ---     0.141      R4C6D.FCI to      R4C6D.FCO fsk_gen_inst/dut_PDM1/SLICE_55
+ROUTE         1     0.000      R4C6D.FCO to      R4C7A.FCI fsk_gen_inst/dut_PDM1/n3082
+FCITOFCO_D  ---     0.141      R4C7A.FCI to      R4C7A.FCO fsk_gen_inst/dut_PDM1/SLICE_54
+ROUTE         1     0.000      R4C7A.FCO to      R4C7B.FCI fsk_gen_inst/dut_PDM1/n3083
+FCITOFCO_D  ---     0.141      R4C7B.FCI to      R4C7B.FCO fsk_gen_inst/dut_PDM1/SLICE_45
+ROUTE         1     0.000      R4C7B.FCO to      R4C7C.FCI fsk_gen_inst/dut_PDM1/n3084
+FCITOFCO_D  ---     0.141      R4C7C.FCI to      R4C7C.FCO fsk_gen_inst/dut_PDM1/SLICE_44
+ROUTE         1     0.000      R4C7C.FCO to      R4C7D.FCI fsk_gen_inst/dut_PDM1/n3085
+FCITOFCO_D  ---     0.141      R4C7D.FCI to      R4C7D.FCO fsk_gen_inst/dut_PDM1/SLICE_43
+ROUTE         1     0.000      R4C7D.FCO to      R4C8A.FCI fsk_gen_inst/dut_PDM1/n3086
+FCITOFCO_D  ---     0.141      R4C8A.FCI to      R4C8A.FCO fsk_gen_inst/dut_PDM1/SLICE_42
+ROUTE         1     0.000      R4C8A.FCO to      R4C8B.FCI fsk_gen_inst/dut_PDM1/n3087
+FCITOFCO_D  ---     0.141      R4C8B.FCI to      R4C8B.FCO fsk_gen_inst/dut_PDM1/SLICE_41
+ROUTE         1     0.000      R4C8B.FCO to      R4C8C.FCI fsk_gen_inst/dut_PDM1/n3088
+FCITOFCO_D  ---     0.141      R4C8C.FCI to      R4C8C.FCO fsk_gen_inst/dut_PDM1/SLICE_40
+ROUTE         1     0.000      R4C8C.FCO to      R4C8D.FCI fsk_gen_inst/dut_PDM1/n3089
+FCITOFCO_D  ---     0.141      R4C8D.FCI to      R4C8D.FCO fsk_gen_inst/dut_PDM1/SLICE_39
+ROUTE         1     0.000      R4C8D.FCO to      R4C9A.FCI fsk_gen_inst/dut_PDM1/n3090
+FCITOFCO_D  ---     0.141      R4C9A.FCI to      R4C9A.FCO fsk_gen_inst/dut_PDM1/SLICE_38
+ROUTE         1     0.000      R4C9A.FCO to      R4C9B.FCI fsk_gen_inst/dut_PDM1/n3091
+FCITOFCO_D  ---     0.141      R4C9B.FCI to      R4C9B.FCO fsk_gen_inst/dut_PDM1/SLICE_37
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI fsk_gen_inst/dut_PDM1/n3092
+FCITOFCO_D  ---     0.141      R4C9C.FCI to      R4C9C.FCO fsk_gen_inst/dut_PDM1/SLICE_36
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI fsk_gen_inst/dut_PDM1/n3093
+TLATCH_DEL  ---     1.287      R4C9D.FCI to       R4C9D.Q1 fsk_gen_inst/dut_PDM1/SLICE_35
+ROUTE         1     2.108       R4C9D.Q1 to       R8C2B.D1 fsk_gen_inst/dut_PDM1/PDM_Signal_N_654
+CTOF_DEL    ---     0.371       R8C2B.D1 to       R8C2B.F1 fsk_gen_inst/SLICE_136
+ROUTE        22     2.081       R8C2B.F1 to      R6C7D.LSR fsk_gen_inst/dut_PDM1/i_fpga_clock_c_enable_33 (to i_fpga_clock_c)
+                  --------
+                   10.570   (45.6% logic, 54.4% route), 17 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_105:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C6C.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_100:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C7D.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 5.753ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/dut_PDM1/count_cycles_397__i4  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/dut_PDM1/count_cycles_397__i11  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_397__i10
+
+   Delay:              10.570ns  (45.6% logic, 54.4% route), 17 logic levels.
+
+ Constraint Details:
+
+     10.570ns physical path delay fsk_gen_inst/dut_PDM1/SLICE_105 to fsk_gen_inst/dut_PDM1/SLICE_102 exceeds
+      5.443ns delay constraint less
+      0.000ns skew and
+      0.626ns LSR_SET requirement (totaling 4.817ns) by 5.753ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/dut_PDM1/SLICE_105 to fsk_gen_inst/dut_PDM1/SLICE_102:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.560      R6C6C.CLK to       R6C6C.Q0 fsk_gen_inst/dut_PDM1/SLICE_105 (from i_fpga_clock_c)
+ROUTE         2     1.564       R6C6C.Q0 to       R4C6B.B1 fsk_gen_inst/dut_PDM1/count_cycles_4
+B1TOFCO_DE  ---     0.766       R4C6B.B1 to      R4C6B.FCO fsk_gen_inst/dut_PDM1/SLICE_57
+ROUTE         1     0.000      R4C6B.FCO to      R4C6C.FCI fsk_gen_inst/dut_PDM1/n3080
+FCITOFCO_D  ---     0.141      R4C6C.FCI to      R4C6C.FCO fsk_gen_inst/dut_PDM1/SLICE_56
+ROUTE         1     0.000      R4C6C.FCO to      R4C6D.FCI fsk_gen_inst/dut_PDM1/n3081
+FCITOFCO_D  ---     0.141      R4C6D.FCI to      R4C6D.FCO fsk_gen_inst/dut_PDM1/SLICE_55
+ROUTE         1     0.000      R4C6D.FCO to      R4C7A.FCI fsk_gen_inst/dut_PDM1/n3082
+FCITOFCO_D  ---     0.141      R4C7A.FCI to      R4C7A.FCO fsk_gen_inst/dut_PDM1/SLICE_54
+ROUTE         1     0.000      R4C7A.FCO to      R4C7B.FCI fsk_gen_inst/dut_PDM1/n3083
+FCITOFCO_D  ---     0.141      R4C7B.FCI to      R4C7B.FCO fsk_gen_inst/dut_PDM1/SLICE_45
+ROUTE         1     0.000      R4C7B.FCO to      R4C7C.FCI fsk_gen_inst/dut_PDM1/n3084
+FCITOFCO_D  ---     0.141      R4C7C.FCI to      R4C7C.FCO fsk_gen_inst/dut_PDM1/SLICE_44
+ROUTE         1     0.000      R4C7C.FCO to      R4C7D.FCI fsk_gen_inst/dut_PDM1/n3085
+FCITOFCO_D  ---     0.141      R4C7D.FCI to      R4C7D.FCO fsk_gen_inst/dut_PDM1/SLICE_43
+ROUTE         1     0.000      R4C7D.FCO to      R4C8A.FCI fsk_gen_inst/dut_PDM1/n3086
+FCITOFCO_D  ---     0.141      R4C8A.FCI to      R4C8A.FCO fsk_gen_inst/dut_PDM1/SLICE_42
+ROUTE         1     0.000      R4C8A.FCO to      R4C8B.FCI fsk_gen_inst/dut_PDM1/n3087
+FCITOFCO_D  ---     0.141      R4C8B.FCI to      R4C8B.FCO fsk_gen_inst/dut_PDM1/SLICE_41
+ROUTE         1     0.000      R4C8B.FCO to      R4C8C.FCI fsk_gen_inst/dut_PDM1/n3088
+FCITOFCO_D  ---     0.141      R4C8C.FCI to      R4C8C.FCO fsk_gen_inst/dut_PDM1/SLICE_40
+ROUTE         1     0.000      R4C8C.FCO to      R4C8D.FCI fsk_gen_inst/dut_PDM1/n3089
+FCITOFCO_D  ---     0.141      R4C8D.FCI to      R4C8D.FCO fsk_gen_inst/dut_PDM1/SLICE_39
+ROUTE         1     0.000      R4C8D.FCO to      R4C9A.FCI fsk_gen_inst/dut_PDM1/n3090
+FCITOFCO_D  ---     0.141      R4C9A.FCI to      R4C9A.FCO fsk_gen_inst/dut_PDM1/SLICE_38
+ROUTE         1     0.000      R4C9A.FCO to      R4C9B.FCI fsk_gen_inst/dut_PDM1/n3091
+FCITOFCO_D  ---     0.141      R4C9B.FCI to      R4C9B.FCO fsk_gen_inst/dut_PDM1/SLICE_37
+ROUTE         1     0.000      R4C9B.FCO to      R4C9C.FCI fsk_gen_inst/dut_PDM1/n3092
+FCITOFCO_D  ---     0.141      R4C9C.FCI to      R4C9C.FCO fsk_gen_inst/dut_PDM1/SLICE_36
+ROUTE         1     0.000      R4C9C.FCO to      R4C9D.FCI fsk_gen_inst/dut_PDM1/n3093
+TLATCH_DEL  ---     1.287      R4C9D.FCI to       R4C9D.Q1 fsk_gen_inst/dut_PDM1/SLICE_35
+ROUTE         1     2.108       R4C9D.Q1 to       R8C2B.D1 fsk_gen_inst/dut_PDM1/PDM_Signal_N_654
+CTOF_DEL    ---     0.371       R8C2B.D1 to       R8C2B.F1 fsk_gen_inst/SLICE_136
+ROUTE        22     2.081       R8C2B.F1 to      R6C7B.LSR fsk_gen_inst/dut_PDM1/i_fpga_clock_c_enable_33 (to i_fpga_clock_c)
+                  --------
+                   10.570   (45.6% logic, 54.4% route), 17 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_105:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C6C.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_102:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     1.425       85.PADDI to      R6C7B.CLK i_fpga_clock_c
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+Warning:  87.313MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "i_fpga_clock_c"          |             |             |
+183.722000 MHz ;                        |  183.722 MHz|   87.313 MHz|  18 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+SPI_inst/o_Master_Trig_N_194            |      23|    1471|     35.91%
+                                        |        |        |
+SPI_inst/n38                            |       1|     995|     24.29%
+                                        |        |        |
+SPI_inst/n3027                          |       1|     883|     21.56%
+                                        |        |        |
+SPI_inst/n3026                          |       1|     882|     21.53%
+                                        |        |        |
+SPI_inst/n3025                          |       1|     806|     19.68%
+                                        |        |        |
+SPI_inst/n36                            |       1|     802|     19.58%
+                                        |        |        |
+SPI_inst/n3028                          |       1|     789|     19.26%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/PDM_Signal_N_654  |       1|     704|     17.19%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/i_fpga_clock_c_ena|        |        |
+ble_33                                  |      22|     704|     17.19%
+                                        |        |        |
+SPI_inst/n3024                          |       1|     685|     16.72%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3093             |       1|     682|     16.65%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3092             |       1|     638|     15.58%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/PDM_Signal_1_N_658|       1|     624|     15.23%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/i_fpga_clock_c_ena|        |        |
+ble_64                                  |      22|     624|     15.23%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3078             |       1|     612|     14.94%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3091             |       1|     594|     14.50%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3077             |       1|     588|     14.36%
+                                        |        |        |
+SPI_inst/n3029                          |       1|     587|     14.33%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3076             |       1|     562|     13.72%
+                                        |        |        |
+SPI_inst/n3023                          |       1|     558|     13.62%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3090             |       1|     550|     13.43%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3075             |       1|     531|     12.96%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3089             |       1|     506|     12.35%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3074             |       1|     493|     12.04%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3088             |       1|     462|     11.28%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3073             |       1|     459|     11.21%
+                                        |        |        |
+SPI_inst/n31                            |       1|     439|     10.72%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3072             |       1|     418|     10.21%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3087             |       1|     418|     10.21%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: i_fpga_clock_c   Source: i_fpga_clock.PAD   Loads: 181
+   Covered under: FREQUENCY NET "i_fpga_clock_c" 183.722000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4096  Score: 11436600
+Cumulative negative slack: 11436600
+
+Constraints cover 11155 paths, 1 nets, and 2259 connections (98.86% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Mon Aug 19 10:36:15 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 3 -sphld m -o FSK_Transmitter_impl1.twr -gui -msgset /home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/promote.xml FSK_Transmitter_impl1.ncd FSK_Transmitter_impl1.prf 
+Design file:     FSK_Transmitter_impl1.ncd
+Preference file: FSK_Transmitter_impl1.prf
+Device,speed:    LCMXO640C,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "i_fpga_clock_c" 183.722000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.281ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              RESET/resetCounter_396__i0  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        RESET/resetCounter_396__i0  (to i_fpga_clock_c +)
+
+   Delay:               0.264ns  (47.7% logic, 52.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.264ns physical path delay SLICE_294 to SLICE_294 meets
+     -0.017ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.017ns) by 0.281ns
+
+ Physical Path Details:
+
+      Data path SLICE_294 to SLICE_294:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.126      R8C3B.CLK to       R8C3B.Q0 SLICE_294 (from i_fpga_clock_c)
+ROUTE         5     0.138       R8C3B.Q0 to       R8C3B.M0 RESET/resetCounter_0 (to i_fpga_clock_c)
+                  --------
+                    0.264   (47.7% logic, 52.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to SLICE_294:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R8C3B.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to SLICE_294:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R8C3B.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.285ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              SPI_inst/SPI_Master_Device/SPI_Master_Inst/o_RX_Byte_i0_i1  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        FIFO_inst/data_out__rep_2_i2  (to i_fpga_clock_c +)
+                   FF                        FIFO_inst/fifo3/RAM1
+
+   Delay:               0.268ns  (47.0% logic, 53.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.268ns physical path delay SPI_inst/SPI_Master_Device/SLICE_298 to FIFO_inst/SLICE_131 meets
+     -0.017ns WD_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.017ns) by 0.285ns
+
+ Physical Path Details:
+
+      Data path SPI_inst/SPI_Master_Device/SLICE_298 to FIFO_inst/SLICE_131:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.126      R5C3D.CLK to       R5C3D.Q0 SPI_inst/SPI_Master_Device/SLICE_298 (from i_fpga_clock_c)
+ROUTE         1     0.142       R5C3D.Q0 to       R5C2D.M0 o_RX_Data_1 (to i_fpga_clock_c)
+                  --------
+                    0.268   (47.0% logic, 53.0% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to SPI_inst/SPI_Master_Device/SLICE_298:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R5C3D.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to FIFO_inst/SLICE_131:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to     R5C2D.CLK2 i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.292ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/s_state_0__50  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/count_cycles__i27  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/count_cycles__i26
+
+   Delay:               0.273ns  (46.2% logic, 53.8% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.273ns physical path delay fsk_gen_inst/SLICE_226 to fsk_gen_inst/SLICE_221 meets
+     -0.019ns CE_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.292ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/SLICE_226 to fsk_gen_inst/SLICE_221:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.126      R9C8C.CLK to       R9C8C.Q0 fsk_gen_inst/SLICE_226 (from i_fpga_clock_c)
+ROUTE        25     0.147       R9C8C.Q0 to       R9C8D.CE fsk_gen_inst/s_state_0 (to i_fpga_clock_c)
+                  --------
+                    0.273   (46.2% logic, 53.8% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/SLICE_226:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R9C8C.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/SLICE_221:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R9C8D.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.292ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/s_state_0__50  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/count_cycles__i25  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/count_cycles__i24
+
+   Delay:               0.273ns  (46.2% logic, 53.8% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.273ns physical path delay fsk_gen_inst/SLICE_226 to fsk_gen_inst/SLICE_220 meets
+     -0.019ns CE_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.292ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/SLICE_226 to fsk_gen_inst/SLICE_220:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.126      R9C8C.CLK to       R9C8C.Q0 fsk_gen_inst/SLICE_226 (from i_fpga_clock_c)
+ROUTE        25     0.147       R9C8C.Q0 to       R9C8B.CE fsk_gen_inst/s_state_0 (to i_fpga_clock_c)
+                  --------
+                    0.273   (46.2% logic, 53.8% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/SLICE_226:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R9C8C.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/SLICE_220:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R9C8B.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.299ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              SPI_inst/r_TX_Valid_103  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_TX_Byte_i0_i3  (to i_fpga_clock_c +)
+                   FF                        SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_TX_Byte_i0_i2
+
+   Delay:               0.280ns  (45.0% logic, 55.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.280ns physical path delay SPI_inst/SLICE_185 to SPI_inst/SPI_Master_Device/SLICE_308 meets
+     -0.019ns CE_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.299ns
+
+ Physical Path Details:
+
+      Data path SPI_inst/SLICE_185 to SPI_inst/SPI_Master_Device/SLICE_308:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.126      R5C7A.CLK to       R5C7A.Q0 SPI_inst/SLICE_185 (from i_fpga_clock_c)
+ROUTE        30     0.154       R5C7A.Q0 to       R5C7D.CE SPI_inst/r_TX_Valid (to i_fpga_clock_c)
+                  --------
+                    0.280   (45.0% logic, 55.0% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to SPI_inst/SLICE_185:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R5C7A.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to SPI_inst/SPI_Master_Device/SLICE_308:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R5C7D.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.299ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              SPI_inst/r_TX_Valid_103  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_TX_Byte_i0_i5  (to i_fpga_clock_c +)
+                   FF                        SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_TX_Byte_i0_i4
+
+   Delay:               0.280ns  (45.0% logic, 55.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.280ns physical path delay SPI_inst/SLICE_185 to SPI_inst/SPI_Master_Device/SLICE_296 meets
+     -0.019ns CE_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.299ns
+
+ Physical Path Details:
+
+      Data path SPI_inst/SLICE_185 to SPI_inst/SPI_Master_Device/SLICE_296:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.126      R5C7A.CLK to       R5C7A.Q0 SPI_inst/SLICE_185 (from i_fpga_clock_c)
+ROUTE        30     0.154       R5C7A.Q0 to       R5C7B.CE SPI_inst/r_TX_Valid (to i_fpga_clock_c)
+                  --------
+                    0.280   (45.0% logic, 55.0% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to SPI_inst/SLICE_185:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R5C7A.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to SPI_inst/SPI_Master_Device/SLICE_296:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R5C7B.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.301ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/dut_PDM1/count_cycles_1_398__i25  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_26  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_1_398__i25
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_1_398__i24
+
+   Delay:               0.257ns  (49.0% logic, 51.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.257ns physical path delay fsk_gen_inst/dut_PDM1/SLICE_78 to fsk_gen_inst/dut_PDM1/SLICE_78 meets
+     -0.044ns LUT_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.044ns) by 0.301ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/dut_PDM1/SLICE_78 to fsk_gen_inst/dut_PDM1/SLICE_78:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.126      R3C5A.CLK to       R3C5A.Q1 fsk_gen_inst/dut_PDM1/SLICE_78 (from i_fpga_clock_c)
+ROUTE         2     0.131       R3C5A.Q1 to       R3C5A.A1 fsk_gen_inst/dut_PDM1/count_cycles_1_25 (to i_fpga_clock_c)
+                  --------
+                    0.257   (49.0% logic, 51.0% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_78:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R3C5A.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_78:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R3C5A.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.301ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/dut_PDM1/count_cycles_1_398__i31  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/dut_PDM1/count_cycles_1_398__i31  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_1_398__i30
+
+   Delay:               0.257ns  (49.0% logic, 51.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.257ns physical path delay fsk_gen_inst/dut_PDM1/SLICE_75 to fsk_gen_inst/dut_PDM1/SLICE_75 meets
+     -0.044ns LUT_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.044ns) by 0.301ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/dut_PDM1/SLICE_75 to fsk_gen_inst/dut_PDM1/SLICE_75:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.126      R3C5D.CLK to       R3C5D.Q1 fsk_gen_inst/dut_PDM1/SLICE_75 (from i_fpga_clock_c)
+ROUTE         2     0.131       R3C5D.Q1 to       R3C5D.A1 fsk_gen_inst/dut_PDM1/count_cycles_1_31 (to i_fpga_clock_c)
+                  --------
+                    0.257   (49.0% logic, 51.0% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_75:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R3C5D.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_75:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R3C5D.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.301ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/dut_PDM1/count_cycles_1_398__i27  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_28  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_1_398__i27
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_1_398__i26
+
+   Delay:               0.257ns  (49.0% logic, 51.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.257ns physical path delay fsk_gen_inst/dut_PDM1/SLICE_77 to fsk_gen_inst/dut_PDM1/SLICE_77 meets
+     -0.044ns LUT_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.044ns) by 0.301ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/dut_PDM1/SLICE_77 to fsk_gen_inst/dut_PDM1/SLICE_77:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.126      R3C5B.CLK to       R3C5B.Q1 fsk_gen_inst/dut_PDM1/SLICE_77 (from i_fpga_clock_c)
+ROUTE         2     0.131       R3C5B.Q1 to       R3C5B.A1 fsk_gen_inst/dut_PDM1/count_cycles_1_27 (to i_fpga_clock_c)
+                  --------
+                    0.257   (49.0% logic, 51.0% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_77:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R3C5B.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_77:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R3C5B.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.301ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fsk_gen_inst/dut_PDM1/count_cycles_1_398__i29  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_30  (to i_fpga_clock_c +)
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_1_398__i29
+                   FF                        fsk_gen_inst/dut_PDM1/count_cycles_1_398__i28
+
+   Delay:               0.257ns  (49.0% logic, 51.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.257ns physical path delay fsk_gen_inst/dut_PDM1/SLICE_76 to fsk_gen_inst/dut_PDM1/SLICE_76 meets
+     -0.044ns LUT_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.044ns) by 0.301ns
+
+ Physical Path Details:
+
+      Data path fsk_gen_inst/dut_PDM1/SLICE_76 to fsk_gen_inst/dut_PDM1/SLICE_76:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.126      R3C5C.CLK to       R3C5C.Q1 fsk_gen_inst/dut_PDM1/SLICE_76 (from i_fpga_clock_c)
+ROUTE         2     0.131       R3C5C.Q1 to       R3C5C.A1 fsk_gen_inst/dut_PDM1/count_cycles_1_29 (to i_fpga_clock_c)
+                  --------
+                    0.257   (49.0% logic, 51.0% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_76:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R3C5C.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path i_fpga_clock to fsk_gen_inst/dut_PDM1/SLICE_76:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       181     0.351       85.PADDI to      R3C5C.CLK i_fpga_clock_c
+                  --------
+                    0.351   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "i_fpga_clock_c"          |             |             |
+183.722000 MHz ;                        |     0.000 ns|     0.281 ns|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: i_fpga_clock_c   Source: i_fpga_clock.PAD   Loads: 181
+   Covered under: FREQUENCY NET "i_fpga_clock_c" 183.722000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 11155 paths, 1 nets, and 2259 connections (98.86% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4096 (setup), 0 (hold)
+Score: 11436600 (setup), 0 (hold)
+Cumulative negative slack: 11436600 (11436600+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

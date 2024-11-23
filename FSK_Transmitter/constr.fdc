@@ -1,0 +1,1 @@
+create_clock -period 50.000000 -name fpga_clk [get_nets fpga_clock_c]

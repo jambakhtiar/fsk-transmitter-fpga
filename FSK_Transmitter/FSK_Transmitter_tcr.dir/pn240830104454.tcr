@@ -1,0 +1,5 @@
+#Start recording tcl command: 8/30/2024 09:50:04
+#Project Location: /home/jam/Downloads/fsk_spi/FSK_Transmitter; Project name: FSK_Transmitter
+prj_project open "/home/jam/Downloads/fsk_spi/FSK_Transmitter/FSK_Transmitter.ldf"
+prj_run Synthesis -impl impl1
+#Stop recording: 8/30/2024 10:44:54

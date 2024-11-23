@@ -1,0 +1,19 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Fri Aug 16 08:10:28 2024 *
+NOTE DESIGN NAME: system_top *
+NOTE DEVICE NAME: LAMXO640C-3TQFP100 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS F1Q4 : 20 : out *
+NOTE PINS F1Q1 : 17 : out *
+NOTE PINS o_SPI_CS_n : 32 : inout *
+NOTE PINS F2Q2 : 18 : out *
+NOTE PINS F2Q3 : 19 : out *
+NOTE PINS o_Master_Trig : 46 : out *
+NOTE PINS o_SPI_Clk : 9 : out *
+NOTE PINS o_SPI_MOSI : 37 : out *
+NOTE PINS fpga_clock : 43 : in *
+NOTE PINS i_Done_Trig : 50 : in *
+NOTE PINS i_SPI_MISO : 34 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: off *

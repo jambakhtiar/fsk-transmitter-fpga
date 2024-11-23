@@ -1,0 +1,45 @@
+Time resolution is 1 ps
+Time = 0 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = x | o_SPI_MOSI = x | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 80000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 160000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 240000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 320000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 400000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 1 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 420000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 480000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 540000 | i_fpga_clock = 0 | i_Done_Trig = 1 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 560000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 640000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 720000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 800000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 880000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 960000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 1040000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+F1Q1 = x, F1Q4 = x, F2Q2 = x, F2Q3 = x
+o_Master_Trig = x, o_SPI_Clk = z, o_SPI_MOSI = z, o_SPI_CS_n = x
+Time = 1120000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = x | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 1200000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 1280000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 1360000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 1440000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 1520000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 1600000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 1680000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 1760000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 1840000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 1920000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 2000000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 2080000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 2160000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 2240000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 2320000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 2400000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 2480000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 2560000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 2640000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 2720000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 2800000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 2880000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 2960000 | i_fpga_clock = 1 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+Time = 3040000 | i_fpga_clock = 0 | i_Done_Trig = 0 | i_SPI_MISO = 0 | o_Master_Trig = x | o_SPI_Clk = z | o_SPI_MOSI = z | o_SPI_CS_n = z | F1Q1 = x | F1Q4 = x | F2Q2 = x | F2Q3 = x
+$finish called at time : 3060 ns : File "/home/jam/Downloads/fsk_spi/vivado/project_1/project_1.srcs/sim_1/new/tb_system_top.v" Line 71

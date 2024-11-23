@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Map" build_result="0" build_time="1724993987">
+            <Task name="Map" build_result="0" update_result="2" update_time="1724993987"/>
+            <Task name="MapEqu" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1724993987"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="0" build_time="1724993987">
+            <Task name="PAR" build_result="0" update_result="2" update_time="1724993987"/>
+            <Task name="PARTrace" build_result="0" update_result="2" update_time="1724993987"/>
+            <Task name="IOTiming" build_result="0" update_result="2" update_time="1724993987"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="0" build_time="1724993987">
+            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1724993987"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1724993987"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1724656976"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1724656976"/>
+            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/FSK_Transmitter_impl1_map.vdb" last_build_time="1724045768" last_build_size="226964"/>
+        <Report name="FSK_Transmitter_impl1.bgn" last_build_time="1723777828" last_build_size="2092"/>
+        <Report name="FSK_Transmitter_impl1.ior" last_build_time="1724045776" last_build_size="2559"/>
+        <Report name="FSK_Transmitter_impl1.jed" last_build_time="1723777830" last_build_size="132623"/>
+        <Report name="FSK_Transmitter_impl1.lsedata" last_build_time="1724993423" last_build_size="720961"/>
+        <Report name="FSK_Transmitter_impl1.ncd" last_build_time="1724045775" last_build_size="481504"/>
+        <Report name="FSK_Transmitter_impl1.ngd" last_build_time="1724993427" last_build_size="487452"/>
+        <Report name="FSK_Transmitter_impl1.tw1" last_build_time="1724045769" last_build_size="13375"/>
+        <Report name="FSK_Transmitter_impl1.twr" last_build_time="1724045775" last_build_size="78639"/>
+        <Report name="FSK_Transmitter_impl1_map.ncd" last_build_time="1724045768" last_build_size="320738"/>
+    </Strategy>
+</BuildStatus>

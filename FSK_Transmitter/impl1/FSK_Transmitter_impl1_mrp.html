@@ -1,0 +1,1057 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+          Lattice Mapping Report File for Design Module 'system_top'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO -p LCMXO640C -t TQFP100 -s 3 -oc Commercial
+     FSK_Transmitter_impl1.ngd -o FSK_Transmitter_impl1_map.ncd -pr
+     FSK_Transmitter_impl1.prf -mp FSK_Transmitter_impl1.mrp -lpf /home/jam/Down
+     loads/MCUtoFPGA/FSK_Transmitter/impl1/FSK_Transmitter_impl1.lpf -lpf
+     /home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/FSK_Transmitter.lpf -c 0 -gui
+     -msgset /home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO640CTQFP100
+Target Performance:   3
+Mapper:  mj5g00,  version:  Diamond (64-bit) 3.13.0.56.2
+Mapped on:  08/19/24  10:36:08
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of PFU registers:   284 out of   640 (44%)
+   Number of SLICEs:       307 out of   320 (96%)
+      SLICEs as Logic/ROM:    299 out of   320 (93%)
+      SLICEs as RAM:            8 out of   192 (4%)
+      SLICEs as Carry:        128 out of   320 (40%)
+   Number of LUT4s:        612 out of   640 (96%)
+      Number used as logic LUTs:        340
+      Number used as distributed RAM:    16
+      Number used as ripple logic:      256
+      Number used as shift registers:     0
+   Number of external PIOs: 11 out of 74 (15%)
+   Number of GSRs:  1 out of 1 (100%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   Number of TSALL: 0 out of 1 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net i_fpga_clock_c: 173 loads, 173 rising, 0 falling (Driver: PIO
+     i_fpga_clock )
+   Number of Clock Enables:  30
+     Net fsk_gen_inst/s_state_0: 19 loads, 19 LSLICEs
+     Net fsk_gen_inst/i_fpga_clock_c_enable_6: 1 loads, 1 LSLICEs
+     Net fpga_resetn: 1 loads, 1 LSLICEs
+     Net fsk_gen_inst/i_fpga_clock_c_enable_8: 1 loads, 1 LSLICEs
+     Net fsk_gen_inst/i_fpga_clock_c_enable_12: 1 loads, 1 LSLICEs
+     Net fsk_gen_inst/dut_PDM1/i_fpga_clock_c_enable_64: 6 loads, 6 LSLICEs
+     Net fsk_gen_inst/dut_PDM1/i_fpga_clock_c_enable_33: 6 loads, 6 LSLICEs
+     Net i_fpga_clock_c_enable_19: 2 loads, 2 LSLICEs
+     Net i_fpga_clock_c_enable_67: 2 loads, 2 LSLICEs
+     Net RESET/resetCounter_2__N_7: 2 loads, 2 LSLICEs
+     Net SPI_inst/i_fpga_clock_c_enable_26: 4 loads, 4 LSLICEs
+     Net SPI_inst/i_fpga_clock_c_enable_10: 1 loads, 1 LSLICEs
+     Net SPI_inst/i_fpga_clock_c_enable_11: 1 loads, 1 LSLICEs
+     Net SPI_inst/r_TX_Valid: 4 loads, 4 LSLICEs
+
+     Net SPI_inst/i_fpga_clock_c_enable_16: 1 loads, 1 LSLICEs
+     Net SPI_inst/i_fpga_clock_c_enable_57: 11 loads, 11 LSLICEs
+     Net SPI_inst/SPI_Master_Device/o_SPI_CS_n_N_260: 1 loads, 1 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/i_fpga_clock_c_enable_1: 1
+     loads, 1 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/i_fpga_clock_c_enable_2: 1
+     loads, 1 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/i_fpga_clock_c_enable_4: 1
+     loads, 1 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/i_fpga_clock_c_enable_9: 1
+     loads, 1 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_Leading_Edge: 1 loads, 1
+     LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/i_fpga_clock_c_enable_69: 2
+     loads, 2 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/i_fpga_clock_c_enable_36: 2
+     loads, 2 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_Trailing_Edge: 1 loads, 1
+     LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/i_fpga_clock_c_enable_71: 1
+     loads, 1 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/i_fpga_clock_c_enable_73: 1
+     loads, 1 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/i_fpga_clock_c_enable_74: 1
+     loads, 1 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/i_fpga_clock_c_enable_72: 1
+     loads, 1 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/i_fpga_clock_c_enable_70: 1
+     loads, 1 LSLICEs
+   Number of LSRs:  13
+     Net F1Q1_c: 6 loads, 6 LSLICEs
+     Net F2Q3_c: 6 loads, 6 LSLICEs
+     Net fpga_resetn: 76 loads, 76 LSLICEs
+     Net fsk_gen_inst/dut_PDM1/i_fpga_clock_c_enable_64: 16 loads, 16 LSLICEs
+     Net fsk_gen_inst/dut_PDM1/i_fpga_clock_c_enable_33: 16 loads, 16 LSLICEs
+     Net FIFO_inst/fifo_N_384: 8 loads, 8 LSLICEs
+     Net SPI_inst/r_TX_Valid: 4 loads, 4 LSLICEs
+     Net SPI_inst/SPI_Master_Device/w_Master_Ready: 3 loads, 3 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/n1180: 2 loads, 2 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/n3179: 1 loads, 1 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/n3813: 1 loads, 1 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/n1695: 1 loads, 1 LSLICEs
+     Net SPI_inst/SPI_Master_Device/SPI_Master_Inst/n2049: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net fpga_resetn: 93 loads
+     Net SPI_inst/n83: 40 loads
+     Net fsk_gen_inst/n3784: 34 loads
+     Net fsk_gen_inst/s_state_0__N_430: 34 loads
+     Net fsk_gen_inst/n919: 32 loads
+     Net SPI_inst/n4055: 30 loads
+     Net SPI_inst/r_TX_Valid: 30 loads
+     Net fsk_gen_inst/s_state_0: 25 loads
+     Net SPI_inst/n3782: 25 loads
+     Net SPI_inst/o_Master_Trig_N_194: 23 loads
+
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map:
+     /home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/FSK_Transmitter.lpf(16):
+     Semantic error in "IOBUF PORT "fpga_clock" IO_TYPE=LVCMOS33 ;": Port
+     "fpga_clock" does not exist in the design. This preference has been
+     disabled.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+------------+
+| IO Name             | Direction | Levelmode | IO         | FIXEDDELAY |
+|                     |           |  IO_TYPE  | Register   |            |
++---------------------+-----------+-----------+------------+------------+
+| F1Q4                | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| F1Q1                | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| o_SPI_CS_n          | BIDIR     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| F2Q2                | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| F2Q3                | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| o_Master_Trig       | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| o_SPI_Clk           | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| o_SPI_MOSI          | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| i_fpga_clock        | INPUT     | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| i_Done_Trig         | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| i_SPI_MISO          | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Signal n3824 was merged into signal fpga_resetn
+Signal n1588 was merged into signal SPI_inst/SPI_Master_Device/o_SPI_CS_n_N_257
+Signal RESET/n20 was merged into signal RESET/resetCounter_0
+Signal fsk_gen_inst/dut_PDM1/valid_1_N_618 was merged into signal F2Q3_c
+Signal fsk_gen_inst/dut_PDM1/valid_N_576 was merged into signal F1Q1_c
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal SPI_inst/add_394_12/CO0 undriven or does not drive anything - clipped.
+Signal SPI_inst/add_394_16/CO0 undriven or does not drive anything - clipped.
+
+Signal SPI_inst/add_394_18/CO0 undriven or does not drive anything - clipped.
+Signal SPI_inst/add_394_10/CO0 undriven or does not drive anything - clipped.
+Signal SPI_inst/add_394_20/CO0 undriven or does not drive anything - clipped.
+Signal SPI_inst/add_394_22/S1 undriven or does not drive anything - clipped.
+Signal SPI_inst/add_394_22/CO1 undriven or does not drive anything - clipped.
+Signal SPI_inst/add_394_22/CO0 undriven or does not drive anything - clipped.
+Signal SPI_inst/r_Delay_Count_400_add_4_2/CO0 undriven or does not drive
+     anything - clipped.
+Signal SPI_inst/add_394_2/CO0 undriven or does not drive anything - clipped.
+Signal SPI_inst/r_Delay_Count_400_add_4_4/CO0 undriven or does not drive
+     anything - clipped.
+Signal SPI_inst/r_Delay_Count_400_add_4_6/CO0 undriven or does not drive
+     anything - clipped.
+Signal SPI_inst/r_Delay_Count_400_add_4_8/CO0 undriven or does not drive
+     anything - clipped.
+Signal SPI_inst/r_Delay_Count_400_add_4_10/CO0 undriven or does not drive
+     anything - clipped.
+Signal SPI_inst/r_Delay_Count_400_add_4_12/CO0 undriven or does not drive
+     anything - clipped.
+Signal SPI_inst/r_Delay_Count_400_add_4_14/CO0 undriven or does not drive
+     anything - clipped.
+Signal SPI_inst/r_Delay_Count_400_add_4_16/CO0 undriven or does not drive
+     anything - clipped.
+Signal SPI_inst/r_Delay_Count_400_add_4_18/CO0 undriven or does not drive
+     anything - clipped.
+Signal SPI_inst/r_Delay_Count_400_add_4_20/CO1 undriven or does not drive
+     anything - clipped.
+Signal SPI_inst/r_Delay_Count_400_add_4_20/CO0 undriven or does not drive
+     anything - clipped.
+Signal SPI_inst/add_394_4/CO0 undriven or does not drive anything - clipped.
+Signal SPI_inst/add_394_6/CO0 undriven or does not drive anything - clipped.
+Signal SPI_inst/add_394_8/CO0 undriven or does not drive anything - clipped.
+Signal SPI_inst/add_394_14/CO0 undriven or does not drive anything - clipped.
+Signal FIFO_inst/fifo1/WDO1 undriven or does not drive anything - clipped.
+Signal FIFO_inst/fifo1/WDO0 undriven or does not drive anything - clipped.
+Signal FIFO_inst/fifo2/WDO1 undriven or does not drive anything - clipped.
+Signal FIFO_inst/fifo2/WDO0 undriven or does not drive anything - clipped.
+Signal FIFO_inst/fifo3/WDO1 undriven or does not drive anything - clipped.
+Signal FIFO_inst/fifo3/WDO0 undriven or does not drive anything - clipped.
+Signal FIFO_inst/fifo0/WDO1 undriven or does not drive anything - clipped.
+Signal FIFO_inst/fifo0/WDO0 undriven or does not drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_4/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_6/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_8/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_10/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_12/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_14/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_16/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_18/CO0 undriven or does not
+
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_20/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_22/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_47_6/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_24/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_26/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_28/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_30/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_32/CO1 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_32/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_2/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_4/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_6/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_8/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_10/CO0 undriven or does
+     not drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_12/CO0 undriven or does
+     not drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_14/CO0 undriven or does
+     not drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_16/CO0 undriven or does
+     not drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_18/CO0 undriven or does
+     not drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_20/CO0 undriven or does
+     not drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_22/CO0 undriven or does
+     not drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_24/CO0 undriven or does
+     not drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_26/CO0 undriven or does
+     not drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_28/CO0 undriven or does
+     not drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_30/CO0 undriven or does
+     not drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_32/CO1 undriven or does
+     not drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_1_398_add_4_32/CO0 undriven or does
+     not drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_2/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_2/S0 undriven or does not drive anything -
+
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_2/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_4/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_4/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_4/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_6/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_6/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_6/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_8/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_8/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_8/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_10/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_10/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_10/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_12/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_12/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_12/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_14/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_14/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_14/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_16/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_16/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_16/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_18/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_18/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_18/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_20/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_20/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_20/CO0 undriven or does not drive anything
+
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_22/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_22/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_22/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_24/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_24/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_24/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_26/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_26/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_26/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_28/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_28/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_28/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_30/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_30/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_30/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_32/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_32/CO1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2144_32/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_2/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_2/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_2/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_4/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_4/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_4/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_6/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_6/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_6/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_8/S1 undriven or does not drive anything -
+
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_8/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_8/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_10/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_10/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_10/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_47_8/CO1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_47_8/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_48_2/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_48_4/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_48_6/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_48_8/CO1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_48_8/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_47_2/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/count_cycles_397_add_4_2/CO0 undriven or does not
+     drive anything - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_47_4/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_12/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_12/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_12/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_14/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_14/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_14/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_16/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_16/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_16/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_18/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_18/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_18/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_20/S1 undriven or does not drive anything
+
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_20/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_20/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_22/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_22/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_22/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_24/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_24/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_24/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_26/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_26/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_26/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_28/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_28/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_28/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_30/S1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_30/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_30/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_32/S0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_32/CO1 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/dut_PDM1/add_2143_32/CO0 undriven or does not drive anything
+     - clipped.
+Signal fsk_gen_inst/sub_318_add_2_22/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_22/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_22/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/add_15_24/CO0 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/add_15_10/CO0 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/add_15_26/CO0 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/sub_318_add_2_24/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_24/S0 undriven or does not drive anything -
+
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_24/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_26/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_26/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_26/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_28/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_28/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_28/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/add_15_12/CO0 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/add_15_28/CO0 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/add_15_14/CO0 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/sub_318_add_2_30/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_30/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_30/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_32/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_32/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_32/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/add_309_2/CO0 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/add_15_30/CO0 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/sub_318_add_2_2/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_2/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_2/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/add_309_4/CO0 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/sub_318_add_2_4/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_4/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_4/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/add_15_32/CO1 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/add_15_32/CO0 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/add_15_16/CO0 undriven or does not drive anything - clipped.
+
+     
+Signal fsk_gen_inst/add_309_6/CO1 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/add_309_6/CO0 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/add_15_2/CO0 undriven or does not drive anything - clipped.
+Signal fsk_gen_inst/add_15_4/CO0 undriven or does not drive anything - clipped.
+Signal fsk_gen_inst/add_15_18/CO0 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/sub_318_add_2_6/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_6/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_6/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/add_15_20/CO0 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/add_15_22/CO0 undriven or does not drive anything - clipped.
+     
+Signal fsk_gen_inst/sub_318_add_2_8/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_8/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_8/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_10/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_10/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_10/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_12/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_12/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_12/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_14/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_14/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_14/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_16/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_16/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_16/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_18/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_18/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_18/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/add_15_6/CO0 undriven or does not drive anything - clipped.
+
+Signal fsk_gen_inst/sub_318_add_2_20/S1 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_20/S0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/sub_318_add_2_20/CO0 undriven or does not drive anything -
+     clipped.
+Signal fsk_gen_inst/add_15_8/CO0 undriven or does not drive anything - clipped.
+Block SPI_inst/SPI_Master_Device/SPI_Master_Inst/rstn_I_0_1_lut_rep_85 was
+     optimized away.
+Block SPI_inst/SPI_Master_Device/i843_1_lut was optimized away.
+Block RESET/i2153_1_lut was optimized away.
+Block fsk_gen_inst/dut_PDM1/valid_1_I_0_1_lut was optimized away.
+Block fsk_gen_inst/dut_PDM1/valid_I_0_1_lut was optimized away.
+Block i1 was optimized away.
+Block i5 was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+/FIFO_inst:
+    EBRs: 0
+    RAM SLICEs: 8
+    Logic SLICEs: 4
+    PFU Registers: 14
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'fpga_resetn'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'fpga_resetn' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 238 
+
+     Type and instance name of component: 
+   Register : fsk_gen_inst/data_count__i0
+   Register : fsk_gen_inst/count_cycles__i0
+   Register : fsk_gen_inst/PDM_Signal_Valid_2_46
+   Register : fsk_gen_inst/ready_47
+   Register : fsk_gen_inst/s_state_0__50
+   Register : fsk_gen_inst/PDM_Signal_Valid_1_45
+   Register : fsk_gen_inst/count_cycles__i31
+
+   Register : fsk_gen_inst/count_cycles__i30
+   Register : fsk_gen_inst/count_cycles__i29
+   Register : fsk_gen_inst/count_cycles__i28
+   Register : fsk_gen_inst/count_cycles__i27
+   Register : fsk_gen_inst/count_cycles__i26
+   Register : fsk_gen_inst/count_cycles__i25
+   Register : fsk_gen_inst/count_cycles__i24
+   Register : fsk_gen_inst/count_cycles__i23
+   Register : fsk_gen_inst/count_cycles__i22
+   Register : fsk_gen_inst/count_cycles__i21
+   Register : fsk_gen_inst/count_cycles__i20
+   Register : fsk_gen_inst/count_cycles__i19
+   Register : fsk_gen_inst/count_cycles__i18
+   Register : fsk_gen_inst/count_cycles__i17
+   Register : fsk_gen_inst/count_cycles__i16
+   Register : fsk_gen_inst/count_cycles__i15
+   Register : fsk_gen_inst/count_cycles__i14
+   Register : fsk_gen_inst/count_cycles__i13
+   Register : fsk_gen_inst/count_cycles__i12
+   Register : fsk_gen_inst/count_cycles__i11
+   Register : fsk_gen_inst/count_cycles__i10
+   Register : fsk_gen_inst/count_cycles__i9
+   Register : fsk_gen_inst/count_cycles__i8
+   Register : fsk_gen_inst/count_cycles__i7
+   Register : fsk_gen_inst/count_cycles__i6
+   Register : fsk_gen_inst/count_cycles__i5
+   Register : fsk_gen_inst/count_cycles__i4
+   Register : fsk_gen_inst/count_cycles__i3
+   Register : fsk_gen_inst/count_cycles__i2
+   Register : fsk_gen_inst/count_cycles__i1
+   Register : fsk_gen_inst/data_count__i5
+   Register : fsk_gen_inst/data_count__i4
+   Register : fsk_gen_inst/data_count__i3
+   Register : fsk_gen_inst/data_count__i2
+   Register : fsk_gen_inst/data_count__i1
+   Register : fsk_gen_inst/dut_PDM1/count_1__i0
+   Register : fsk_gen_inst/dut_PDM1/count__i0
+   Register : fsk_gen_inst/dut_PDM1/PDM_Signal_1_40
+   Register : fsk_gen_inst/dut_PDM1/PDM_Signal_37
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i0
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i0
+   Register : fsk_gen_inst/dut_PDM1/count__i7
+   Register : fsk_gen_inst/dut_PDM1/count__i6
+   Register : fsk_gen_inst/dut_PDM1/count__i5
+   Register : fsk_gen_inst/dut_PDM1/count__i4
+   Register : fsk_gen_inst/dut_PDM1/count__i3
+   Register : fsk_gen_inst/dut_PDM1/count__i2
+   Register : fsk_gen_inst/dut_PDM1/count__i1
+   Register : fsk_gen_inst/dut_PDM1/count_1__i7
+   Register : fsk_gen_inst/dut_PDM1/count_1__i6
+   Register : fsk_gen_inst/dut_PDM1/count_1__i5
+   Register : fsk_gen_inst/dut_PDM1/count_1__i4
+   Register : fsk_gen_inst/dut_PDM1/count_1__i3
+   Register : fsk_gen_inst/dut_PDM1/count_1__i2
+   Register : fsk_gen_inst/dut_PDM1/count_1__i1
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i1
+
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i2
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i3
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i4
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i5
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i6
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i7
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i8
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i9
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i10
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i11
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i12
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i13
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i14
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i15
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i16
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i17
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i18
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i19
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i20
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i21
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i22
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i23
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i24
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i25
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i26
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i27
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i28
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i29
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i30
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_397__i31
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i1
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i2
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i3
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i4
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i5
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i6
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i7
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i8
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i9
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i10
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i11
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i12
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i13
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i14
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i15
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i16
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i17
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i18
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i19
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i20
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i21
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i22
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i23
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i24
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i25
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i26
+
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i27
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i28
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i29
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i30
+   Register : fsk_gen_inst/dut_PDM1/count_cycles_1_398__i31
+   Register : FIFO_inst/w_ptr__i0
+   Register : FIFO_inst/r_ptr__i0
+   Register : FIFO_inst/data_out__rep_2_i1
+   Register : FIFO_inst/data_out_
+   Register : FIFO_inst/fifo_out_valid_36
+   Register : FIFO_inst/data_out__rep_2_i8
+   Register : FIFO_inst/data_out__rep_2_i7
+   Register : FIFO_inst/data_out__rep_2_i6
+   Register : FIFO_inst/data_out__rep_2_i5
+   Register : FIFO_inst/data_out__rep_2_i4
+   Register : FIFO_inst/data_out__rep_2_i3
+   Register : FIFO_inst/data_out__rep_2_i2
+   Register : FIFO_inst/r_ptr__i3
+   Register : FIFO_inst/r_ptr__i2
+   Register : FIFO_inst/r_ptr__i1
+   Register : FIFO_inst/w_ptr__i3
+   Register : FIFO_inst/w_ptr__i2
+   Register : FIFO_inst/w_ptr__i1
+   Register : RESET/resetCounter_396__i0
+   Register : RESET/fpga_resetn_11
+   Register : RESET/resetCounter_396__i1
+   Register : RESET/resetCounter_396__i2
+   Register : SPI_inst/r_Data_Count__i0
+   Register : SPI_inst/r_Total_Count__i0
+   Register : SPI_inst/r_TX_Data__i0
+   Register : SPI_inst/r_State_FSM_i1
+   Register : SPI_inst/r_Start_104
+   Register : SPI_inst/o_Master_Trig_101
+   Register : SPI_inst/r_TX_Valid_103
+   Register : SPI_inst/r_Stop_106
+   Register : SPI_inst/r_Delay_Count_400__i0
+   Register : SPI_inst/r_State_FSM_i6
+   Register : SPI_inst/r_State_FSM_i5
+   Register : SPI_inst/r_State_FSM_i4
+   Register : SPI_inst/r_State_FSM_i3
+   Register : SPI_inst/r_State_FSM_i2
+   Register : SPI_inst/r_TX_Data__i7
+   Register : SPI_inst/r_TX_Data__i6
+   Register : SPI_inst/r_TX_Data__i5
+   Register : SPI_inst/r_TX_Data__i4
+   Register : SPI_inst/r_TX_Data__i3
+   Register : SPI_inst/r_TX_Data__i2
+   Register : SPI_inst/r_TX_Data__i1
+   Register : SPI_inst/r_shift_addr_count__i23
+   Register : SPI_inst/r_shift_addr_count__i22
+   Register : SPI_inst/r_shift_addr_count__i21
+   Register : SPI_inst/r_shift_addr_count__i20
+   Register : SPI_inst/r_shift_addr_count__i19
+   Register : SPI_inst/r_shift_addr_count__i18
+   Register : SPI_inst/r_shift_addr_count__i17
+   Register : SPI_inst/r_shift_addr_count__i16
+
+   Register : SPI_inst/r_shift_addr_count__i15
+   Register : SPI_inst/r_shift_addr_count__i14
+   Register : SPI_inst/r_shift_addr_count__i13
+   Register : SPI_inst/r_shift_addr_count__i12
+   Register : SPI_inst/r_shift_addr_count__i11
+   Register : SPI_inst/r_shift_addr_count__i10
+   Register : SPI_inst/r_shift_addr_count__i9
+   Register : SPI_inst/r_shift_addr_count__i8
+   Register : SPI_inst/r_shift_addr_count__i7
+   Register : SPI_inst/r_shift_addr_count__i6
+   Register : SPI_inst/r_shift_addr_count__i5
+   Register : SPI_inst/r_shift_addr_count__i4
+   Register : SPI_inst/r_shift_addr_count__i3
+   Register : SPI_inst/r_addr_count__i23
+   Register : SPI_inst/r_addr_count__i22
+   Register : SPI_inst/r_addr_count__i21
+   Register : SPI_inst/r_addr_count__i20
+   Register : SPI_inst/r_addr_count__i19
+   Register : SPI_inst/r_addr_count__i18
+   Register : SPI_inst/r_addr_count__i17
+   Register : SPI_inst/r_addr_count__i16
+   Register : SPI_inst/r_addr_count__i15
+   Register : SPI_inst/r_addr_count__i14
+   Register : SPI_inst/r_addr_count__i13
+   Register : SPI_inst/r_addr_count__i12
+   Register : SPI_inst/r_addr_count__i11
+   Register : SPI_inst/r_addr_count__i10
+   Register : SPI_inst/r_addr_count__i9
+   Register : SPI_inst/r_addr_count__i8
+   Register : SPI_inst/r_addr_count__i7
+   Register : SPI_inst/r_addr_count__i6
+   Register : SPI_inst/r_addr_count__i5
+   Register : SPI_inst/r_addr_count__i4
+   Register : SPI_inst/r_addr_count__i3
+   Register : SPI_inst/r_Total_Count__i4
+   Register : SPI_inst/r_Total_Count__i3
+   Register : SPI_inst/r_Total_Count__i2
+   Register : SPI_inst/r_Total_Count__i1
+   Register : SPI_inst/r_Data_Count__i4
+   Register : SPI_inst/r_Data_Count__i3
+   Register : SPI_inst/r_Data_Count__i2
+   Register : SPI_inst/r_Data_Count__i1
+   Register : SPI_inst/r_Delay_Count_400__i1
+   Register : SPI_inst/r_Delay_Count_400__i2
+   Register : SPI_inst/r_Delay_Count_400__i3
+   Register : SPI_inst/r_Delay_Count_400__i4
+   Register : SPI_inst/r_Delay_Count_400__i5
+   Register : SPI_inst/r_Delay_Count_400__i6
+   Register : SPI_inst/r_Delay_Count_400__i7
+   Register : SPI_inst/r_Delay_Count_400__i8
+   Register : SPI_inst/r_Delay_Count_400__i9
+   Register : SPI_inst/r_Delay_Count_400__i10
+   Register : SPI_inst/r_Delay_Count_400__i11
+   Register : SPI_inst/r_Delay_Count_400__i12
+   Register : SPI_inst/r_Delay_Count_400__i13
+   Register : SPI_inst/r_Delay_Count_400__i14
+
+   Register : SPI_inst/r_Delay_Count_400__i15
+   Register : SPI_inst/r_Delay_Count_400__i16
+   Register : SPI_inst/r_Delay_Count_400__i17
+   Register : SPI_inst/r_Delay_Count_400__i18
+   Register : SPI_inst/r_Delay_Count_400__i19
+   Register : SPI_inst/SPI_Master_Device/r_CS_n_66
+   Register : SPI_inst/SPI_Master_Device/i45_67
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'fpga_resetn' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 17 
+
+     Type and instance name of component: 
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_SPI_Clk_Count__i0
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_SPI_Clk_Edges_i0
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_RX_Bit_Count_i0_i0
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_TX_Bit_Count_i0
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/o_TX_Ready_81
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_Leading_Edge_83
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/o_RX_Valid_93
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_TX_Bit_Count_i2
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_TX_Bit_Count_i1
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_RX_Bit_Count_i0_i2
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_RX_Bit_Count_i0_i1
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_SPI_Clk_Edges_i3
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_SPI_Clk_Edges_i2
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_SPI_Clk_Edges_i1
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_SPI_Clk_Count__i2
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_SPI_Clk_Count__i1
+   Register : SPI_inst/SPI_Master_Device/SPI_Master_Inst/r_Trailing_Edge_84
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 143 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

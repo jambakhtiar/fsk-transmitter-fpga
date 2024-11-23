@@ -1,0 +1,23 @@
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.13.0.56.2 -- WARNING: Map write only section -- Mon Aug 19 10:36:08 2024
+
+SYSCONFIG INBUF=ON CONFIG_SECURE=OFF ;
+LOCATE COMP "F1Q4" SITE "20" ;
+LOCATE COMP "F1Q1" SITE "17" ;
+LOCATE COMP "o_SPI_CS_n" SITE "32" ;
+LOCATE COMP "F2Q2" SITE "18" ;
+LOCATE COMP "F2Q3" SITE "19" ;
+LOCATE COMP "o_Master_Trig" SITE "46" ;
+LOCATE COMP "o_SPI_Clk" SITE "9" ;
+LOCATE COMP "o_SPI_MOSI" SITE "37" ;
+LOCATE COMP "i_Done_Trig" SITE "50" ;
+LOCATE COMP "i_SPI_MISO" SITE "34" ;
+SCHEMATIC END ;
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+COMMERCIAL ;
+
+// No timing preferences found. TRCE invokes auto-generation of timing preferences
+// Section Autogen
+FREQUENCY NET "i_fpga_clock_c" 183.722 MHz ;
+// End Section Autogen

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="FSK_Transmitter" device="LCMXO640C-3T100C" default_implementation="impl1">
+    <Options>
+        <Option name="HDL type" value="Verilog"/>
+        <Option name="VerilogStandard" value="Verilog 2001"/>
+    </Options>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options>
+            <Option name="HDL type" value="Verilog"/>
+            <Option name="VerilogStandard" value="Verilog 2001"/>
+            <Option name="def_top" value="system_top"/>
+            <Option name="lib" value="work"/>
+        </Options>
+        <Source name="impl1/source/sources_1/_math_real.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="impl1/source/sources_1/FIFO.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl1/source/sources_1/fractional_clk_div.v" type="Verilog" type_short="Verilog">
+            <Options top_module="fractional_clk_div"/>
+        </Source>
+        <Source name="impl1/source/sources_1/fsk_gen.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl1/source/sources_1/PDM_Generator.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl1/source/sources_1/resetn.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl1/source/sources_1/SPI_Controller.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl1/source/sources_1/SPI_Master.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl1/source/sources_1/SPI_Master_With_Single_CS.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl1/source/sources_1/system_top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="system_top"/>
+        </Source>
+        <Source name="FSK_Transmitter.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="system_constr.ldc" type="LSE Design Constraints File" type_short="LDC">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="FSK_Transmitter1.sty"/>
+</BaliProject>

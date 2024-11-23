@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Bitgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by mj5g00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
+        </Message>
+    </Task>
+    <Task name="LSE_Compile">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/system_top.v(1): </Dynamic>
+            <Dynamic>system_top</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/system_top.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/system_top.v(32): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/system_top.v</Navigation>
+            <Navigation>32</Navigation>
+        </Message>
+        <Message>
+            <ID>35901063</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/system_top.v(54): </Dynamic>
+            <Dynamic>OSCH</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/system_top.v</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>35901063</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/system_top.v(78): </Dynamic>
+            <Dynamic>PLL_BASE</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/system_top.v</Navigation>
+            <Navigation>78</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v(23): </Dynamic>
+            <Dynamic>SPI_Controller</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Master_With_Single_CS.v(3): </Dynamic>
+            <Dynamic>SPI_Master_With_Single_CS</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Master_With_Single_CS.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Master.v(3): </Dynamic>
+            <Dynamic>SPI_Master(CLKS_PER_HALF_BIT=4)</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Master.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v(129): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v</Navigation>
+            <Navigation>129</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v(139): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v</Navigation>
+            <Navigation>139</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v(141): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v</Navigation>
+            <Navigation>141</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v(147): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>24</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v</Navigation>
+            <Navigation>147</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v(159): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v</Navigation>
+            <Navigation>159</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v(161): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v</Navigation>
+            <Navigation>161</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v(185): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>20</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/SPI_Controller.v</Navigation>
+            <Navigation>185</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/FIFO.v(2): </Dynamic>
+            <Dynamic>FIFO</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/FIFO.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/FIFO.v(25): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/FIFO.v</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/FIFO.v(42): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/FIFO.v</Navigation>
+            <Navigation>42</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/fsk_gen.v(22): </Dynamic>
+            <Dynamic>fsk_gen</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/fsk_gen.v</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/PDM_Generator.v(22): </Dynamic>
+            <Dynamic>PDM_Generator(clk_div=104,clk_div_1=96)</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/PDM_Generator.v</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35901220</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/PDM_Generator.v(32): </Dynamic>
+            <Dynamic>data_reg</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/PDM_Generator.v</Navigation>
+            <Navigation>32</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/PDM_Generator.v(43): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/PDM_Generator.v</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/PDM_Generator.v(69): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/PDM_Generator.v</Navigation>
+            <Navigation>69</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/fsk_gen.v(101): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>6</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/fsk_gen.v</Navigation>
+            <Navigation>101</Navigation>
+        </Message>
+        <Message>
+            <ID>35001714</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>gnd</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931000</ID>
+            <Severity>Error</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/system_top.v(54): </Dynamic>
+            <Dynamic>gnd</Dynamic>
+            <Dynamic>internal_oscillator</Dynamic>
+            <Dynamic>STDBY</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/impl1/source/system_top.v</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/FSK_Transmitter.lpf(16): Semantic error in &quot;IOBUF PORT &quot;fpga_clock&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>fpga_clock</Dynamic>
+            <Navigation>/home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/FSK_Transmitter.lpf</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/system_top.v(1): </Dynamic>
+            <Dynamic>system_top</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/system_top.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/resetn.v(3): </Dynamic>
+            <Dynamic>resetn</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/resetn.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/resetn.v(14): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/resetn.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v(23): </Dynamic>
+            <Dynamic>SPI_Controller</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Master_With_Single_CS.v(3): </Dynamic>
+            <Dynamic>SPI_Master_With_Single_CS</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Master_With_Single_CS.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Master.v(3): </Dynamic>
+            <Dynamic>SPI_Master(CLKS_PER_HALF_BIT=4)</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Master.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v(129): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v</Navigation>
+            <Navigation>129</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v(139): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v</Navigation>
+            <Navigation>139</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v(141): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v</Navigation>
+            <Navigation>141</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v(147): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>24</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v</Navigation>
+            <Navigation>147</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v(159): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v</Navigation>
+            <Navigation>159</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v(161): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v</Navigation>
+            <Navigation>161</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v(185): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>20</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v</Navigation>
+            <Navigation>185</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/FIFO.v(2): </Dynamic>
+            <Dynamic>FIFO</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/FIFO.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/FIFO.v(25): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/FIFO.v</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/FIFO.v(42): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/FIFO.v</Navigation>
+            <Navigation>42</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/fsk_gen.v(21): </Dynamic>
+            <Dynamic>fsk_gen</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/fsk_gen.v</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/PDM_Generator.v(22): </Dynamic>
+            <Dynamic>PDM_Generator(clk_div=104,clk_div_1=96)</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/PDM_Generator.v</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35901220</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/PDM_Generator.v(32): </Dynamic>
+            <Dynamic>data_reg</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/PDM_Generator.v</Navigation>
+            <Navigation>32</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/PDM_Generator.v(43): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/PDM_Generator.v</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/PDM_Generator.v(69): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/PDM_Generator.v</Navigation>
+            <Navigation>69</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/fsk_gen.v(100): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>6</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/fsk_gen.v</Navigation>
+            <Navigation>100</Navigation>
+        </Message>
+        <Message>
+            <ID>35001695</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PORT</Dynamic>
+            <Dynamic>fpga_clock</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001688</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>create_clock -period 20.000000 -name fpga_clk [ get_ports { fpga_clock } ]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>n508</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>pwr</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001695</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>PORT</Dynamic>
+            <Dynamic>fpga_clock</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001688</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>create_clock -period 20.000000 -name fpga_clk [ get_ports { fpga_clock } ]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\SPI_inst/r_State</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\SPI_inst/SPI_Master_Device/r_State</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v(203): </Dynamic>
+            <Dynamic>\SPI_inst/r_addr_count__i0</Dynamic>
+            <Navigation>/home/jam/Downloads/fsk_spi/FSK_Transmitter/impl1/source/sources_1/SPI_Controller.v</Navigation>
+            <Navigation>203</Navigation>
+        </Message>
+        <Message>
+            <ID>35001723</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>system_top_for_lpf.sdc</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

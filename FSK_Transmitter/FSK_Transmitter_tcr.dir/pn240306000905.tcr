@@ -1,0 +1,26 @@
+#Start recording tcl command: 3/5/2024 22:38:42
+#Project Location: D:/Aamir/Freelancer/LatticeFPGA/Proj; Project name: FSK_Transmitter
+prj_project open "D:/Aamir/Freelancer/LatticeFPGA/Proj/FSK_Transmitter.ldf"
+prj_src add "D:/Aamir/Freelancer/LatticeFPGA/SPI_FIFO/SPI_FIFO.srcs/sources_1/new/SPI_Slave.v" "D:/Aamir/Freelancer/LatticeFPGA/SPI_FIFO/SPI_FIFO.srcs/sources_1/new/FIFO.v"
+prj_src remove "D:/Aamir/Freelancer/LatticeFPGA/SPI_FIFO/SPI_FIFO.srcs/sources_1/new/SPI_Slave.v" "D:/Aamir/Freelancer/LatticeFPGA/SPI_FIFO/SPI_FIFO.srcs/sources_1/new/FIFO.v"
+file copy -force -- "D:/Aamir/Freelancer/LatticeFPGA/SPI_FIFO/SPI_FIFO.srcs/sources_1/new/FIFO.v" "D:/Aamir/Freelancer/LatticeFPGA/SPI_FIFO/SPI_FIFO.srcs/sources_1/new/SPI_Slave.v" "D:/Aamir/Freelancer/LatticeFPGA/Proj/impl1/source"
+prj_src add "D:/Aamir/Freelancer/LatticeFPGA/Proj/impl1/source/FIFO.v" "D:/Aamir/Freelancer/LatticeFPGA/Proj/impl1/source/SPI_Slave.v"
+prj_src add "D:/Aamir/Freelancer/LatticeFPGA/Proj/system_top.v"
+file copy -force -- "D:/Aamir/Freelancer/LatticeFPGA/FSK_PDM/PDM_Generator.v" "D:/Aamir/Freelancer/LatticeFPGA/FSK_PDM/fsk_gen.v" "D:/Aamir/Freelancer/LatticeFPGA/Proj/impl1/source"
+prj_src add "D:/Aamir/Freelancer/LatticeFPGA/Proj/impl1/source/PDM_Generator.v" "D:/Aamir/Freelancer/LatticeFPGA/Proj/impl1/source/fsk_gen.v"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Map -impl impl1 -task MapTrace -forceOne
+prj_run Synthesis -impl impl1
+prj_src add "D:/Aamir/Freelancer/LatticeFPGA/Proj/constr.fdc"
+prj_run Synthesis -impl impl1
+prj_src add -exclude "D:/Aamir/Freelancer/LatticeFPGA/Proj/system_constr.ldc"
+prj_src enable "D:/Aamir/Freelancer/LatticeFPGA/Proj/system_constr.ldc"
+prj_src remove "D:/Aamir/Freelancer/LatticeFPGA/Proj/constr.fdc"
+prj_run Synthesis -impl impl1
+#Stop recording: 3/6/2024 00:09:05

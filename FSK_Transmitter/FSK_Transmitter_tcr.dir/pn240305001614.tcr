@@ -1,0 +1,5 @@
+#Start recording tcl command: 3/4/2024 22:35:19
+#Project Location: D:/Aamir/Freelancer/LatticeFPGA/Proj; Project name: FSK_Transmitter
+prj_project new -name "FSK_Transmitter" -impl "impl1" -dev LAMXO640C-3TN100E -synthesis "lse"
+prj_project save
+#Stop recording: 3/5/2024 00:16:14

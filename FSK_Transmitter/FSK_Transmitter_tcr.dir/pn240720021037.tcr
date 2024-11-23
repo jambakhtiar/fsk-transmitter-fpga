@@ -1,0 +1,4 @@
+#Start recording tcl command: 7/20/2024 02:10:29
+#Project Location: D:/Aamir/Freelancer/LatticeFPGA/Proj; Project name: FSK_Transmitter
+prj_project open "D:/Aamir/Freelancer/LatticeFPGA/Proj/FSK_Transmitter.ldf"
+#Stop recording: 7/20/2024 02:10:37

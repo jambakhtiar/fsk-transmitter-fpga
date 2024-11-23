@@ -1,0 +1,360 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file FSK_Transmitter_impl1_map.ncd.
+Design name: system_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO640C
+Package:     TQFP100
+Performance: 3
+Loading device for application trce from file 'mj5g12x10.nph' in environment: /usr/local/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.17.
+Performance Hardware Data Status: Version 1.124.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
+Mon Aug 19 10:36:08 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o FSK_Transmitter_impl1.tw1 -gui -msgset /home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/promote.xml FSK_Transmitter_impl1_map.ncd FSK_Transmitter_impl1.prf 
+Design file:     FSK_Transmitter_impl1_map.ncd
+Preference file: FSK_Transmitter_impl1.prf
+Device,speed:    LCMXO640C,3
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "i_fpga_clock_c" 183.722000 MHz (4096 errors)</FONT></A></LI>
+</FONT>            4096 items scored, 4096 timing errors detected.
+Warning:  74.482MHz is the maximum frequency for this preference.
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "i_fpga_clock_c" 183.722000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 7.983ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              SPI_inst/r_Delay_Count_400__i18  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        SPI_inst/r_Total_Count__i1  (to i_fpga_clock_c +)
+
+   Delay:              13.245ns  (23.8% logic, 76.2% route), 8 logic levels.
+
+ Constraint Details:
+
+     13.245ns physical path delay SPI_inst/SLICE_111 to SPI_inst/SLICE_186 exceeds
+      5.443ns delay constraint less
+      0.181ns DIN_SET requirement (totaling 5.262ns) by 7.983ns
+
+ Physical Path Details:
+
+      Data path SPI_inst/SLICE_111 to SPI_inst/SLICE_186:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.560 *SLICE_111.CLK to */SLICE_111.Q0 SPI_inst/SLICE_111 (from i_fpga_clock_c)
+ROUTE         3   e 1.441 */SLICE_111.Q0 to */SLICE_303.C0 SPI_inst/r_Delay_Count_18
+CTOF_DEL    ---     0.371 */SLICE_303.C0 to */SLICE_303.F0 SPI_inst/SLICE_303
+ROUTE         1   e 1.441 */SLICE_303.F0 to */SLICE_273.A0 SPI_inst/n31
+CTOF_DEL    ---     0.371 */SLICE_273.A0 to */SLICE_273.F0 SPI_inst/SLICE_273
+ROUTE         1   e 1.441 */SLICE_273.F0 to */SLICE_272.B0 SPI_inst/n36
+CTOF_DEL    ---     0.371 */SLICE_272.B0 to */SLICE_272.F0 SPI_inst/SLICE_272
+ROUTE         1   e 1.441 */SLICE_272.F0 to */SLICE_271.B0 SPI_inst/n38
+CTOF_DEL    ---     0.371 */SLICE_271.B0 to */SLICE_271.F0 SPI_inst/SLICE_271
+ROUTE        23   e 1.441 */SLICE_271.F0 to */SLICE_286.B0 SPI_inst/o_Master_Trig_N_194
+CTOF_DEL    ---     0.371 */SLICE_286.B0 to */SLICE_286.F0 SPI_inst/SLICE_286
+ROUTE         5   e 1.441 */SLICE_286.F0 to */SLICE_258.D0 SPI_inst/n5
+CTOF_DEL    ---     0.371 */SLICE_258.D0 to */SLICE_258.F0 SPI_inst/SLICE_258
+ROUTE         1   e 1.441 */SLICE_258.F0 to */SLICE_186.B1 SPI_inst/n6_adj_671
+CTOF_DEL    ---     0.371 */SLICE_186.B1 to */SLICE_186.F1 SPI_inst/SLICE_186
+ROUTE         1   e 0.001 */SLICE_186.F1 to *SLICE_186.DI1 SPI_inst/r_Total_Count_4_N_185_1 (to i_fpga_clock_c)
+                  --------
+                   13.245   (23.8% logic, 76.2% route), 8 logic levels.
+
+Warning:  74.482MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "i_fpga_clock_c"          |             |             |
+183.722000 MHz ;                        |  183.722 MHz|   74.482 MHz|   8 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+SPI_inst/o_Master_Trig_N_194            |      23|    1330|     32.47%
+                                        |        |        |
+SPI_inst/n38                            |       1|    1170|     28.56%
+                                        |        |        |
+SPI_inst/n36                            |       1|     936|     22.85%
+                                        |        |        |
+fsk_gen_inst/n62                        |       4|     752|     18.36%
+                                        |        |        |
+fsk_gen_inst/n3784                      |      34|     696|     16.99%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3078             |       1|     630|     15.38%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3093             |       1|     630|     15.38%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/PDM_Signal_1_N_658|       1|     630|     15.38%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/PDM_Signal_N_654  |       1|     630|     15.38%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/i_fpga_clock_c_ena|        |        |
+ble_33                                  |      22|     630|     15.38%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/i_fpga_clock_c_ena|        |        |
+ble_64                                  |      22|     630|     15.38%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3077             |       1|     614|     14.99%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3092             |       1|     614|     14.99%
+                                        |        |        |
+SPI_inst/n3026                          |       1|     610|     14.89%
+                                        |        |        |
+SPI_inst/n3025                          |       1|     600|     14.65%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3076             |       1|     582|     14.21%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3091             |       1|     582|     14.21%
+                                        |        |        |
+SPI_inst/n3027                          |       1|     580|     14.16%
+                                        |        |        |
+SPI_inst/n3024                          |       1|     550|     13.43%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3075             |       1|     550|     13.43%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3090             |       1|     550|     13.43%
+                                        |        |        |
+SPI_inst/n3028                          |       1|     510|     12.45%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3074             |       1|     506|     12.35%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3089             |       1|     506|     12.35%
+                                        |        |        |
+SPI_inst/n31                            |       1|     468|     11.43%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3073             |       1|     462|     11.28%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3088             |       1|     462|     11.28%
+                                        |        |        |
+SPI_inst/n3023                          |       1|     450|     10.99%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3072             |       1|     418|     10.21%
+                                        |        |        |
+fsk_gen_inst/dut_PDM1/n3087             |       1|     418|     10.21%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: i_fpga_clock_c   Source: i_fpga_clock.PAD   Loads: 181
+   Covered under: FREQUENCY NET "i_fpga_clock_c" 183.722000 MHz ;
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 4096  Score: 15012248
+Cumulative negative slack: 15012248
+
+Constraints cover 11155 paths, 1 nets, and 2203 connections (96.41% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
+Mon Aug 19 10:36:09 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o FSK_Transmitter_impl1.tw1 -gui -msgset /home/jam/Downloads/MCUtoFPGA/FSK_Transmitter/promote.xml FSK_Transmitter_impl1_map.ncd FSK_Transmitter_impl1.prf 
+Design file:     FSK_Transmitter_impl1_map.ncd
+Preference file: FSK_Transmitter_impl1.prf
+Device,speed:    LCMXO640C,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "i_fpga_clock_c" 183.722000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "i_fpga_clock_c" 183.722000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.342ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              RESET/resetCounter_396__i0  (from i_fpga_clock_c +)
+   Destination:    FF         Data in        RESET/resetCounter_396__i0  (to i_fpga_clock_c +)
+
+   Delay:               0.325ns  (38.8% logic, 61.2% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.325ns physical path delay SLICE_294 to SLICE_294 meets
+     -0.017ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.017ns) by 0.342ns
+
+ Physical Path Details:
+
+      Data path SLICE_294 to SLICE_294:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.126  SLICE_294.CLK to   SLICE_294.Q0 SLICE_294 (from i_fpga_clock_c)
+ROUTE         5   e 0.199   SLICE_294.Q0 to   SLICE_294.M0 RESET/resetCounter_0 (to i_fpga_clock_c)
+                  --------
+                    0.325   (38.8% logic, 61.2% route), 1 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "i_fpga_clock_c"          |             |             |
+183.722000 MHz ;                        |     0.000 ns|     0.342 ns|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: i_fpga_clock_c   Source: i_fpga_clock.PAD   Loads: 181
+   Covered under: FREQUENCY NET "i_fpga_clock_c" 183.722000 MHz ;
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 11155 paths, 1 nets, and 2259 connections (98.86% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 4096 (setup), 0 (hold)
+Score: 15012248 (setup), 0 (hold)
+Cumulative negative slack: 15012248 (15012248+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

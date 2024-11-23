@@ -1,0 +1,5 @@
+#Start recording tcl command: 8/14/2024 14:06:39
+#Project Location: C:/Users/bruni/Downloads/LatticeProj_FProgClk (1)/LatticeProj_FProgClk/Proj; Project name: FSK_Transmitter
+prj_project open "C:/Users/bruni/Downloads/LatticeProj_FProgClk (1)/LatticeProj_FProgClk/Proj/FSK_Transmitter.ldf"
+prj_project close
+#Stop recording: 8/14/2024 14:07:12
